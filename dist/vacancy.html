@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css?v=1608586900475">
+    <link rel="stylesheet" href="css/main.min.css?v=1608586900475">
+  </head>
+  <body>
+    <main class="main">
+      <div class="sidebar vacancy-sidebar">
+        <div class="sidebar__layout">
+          <div class="f-container">
+            <div class="sidebar__avatar"><a class="sidebar__avatar-link" href=""><img class="sidebar__ava" src="img/ava.png" alt="Avatar"></a>
+              <p class="sidebar__name">Василий</p>
+            </div>
+            <div class="sidebar__lists">
+              <ul class="sidebar__list">
+                <li class="sidebar__list-item sidebar__li active">
+                  <p>Вакансии</p><span class="sidebar__list-add"><span></span><span></span></span>
+                </li>
+                <li class="sidebar__list-item sidebar__li">
+                  <p>Клиенты</p><span class="sidebar__list-add"><span></span><span></span></span>
+                </li>
+                <li class="sidebar__list-item sidebar__li">
+                  <p>
+                     Работодатели</p><span class="sidebar__list-add"><span></span><span></span></span>
+                </li>
+                <li class="sidebar__list-item sidebar__li">
+                  <p>Статистика</p><span class="sidebar__list-add"><span></span><span></span></span>
+                </li>
+              </ul>
+            </div>
+            <div class="sidebar__statuses active-archive__statuses"></div>
+            <div class="sidebar__filters">
+              <div class="sidebar__input-wrapper" id="vacancy-search-input-wrapper"></div>
+              <ul class="sidebar__filter">
+                <li class="sidebar__filter-item sidebar__li">
+                  <div class="sidebar__filter-wrapper country-filter-wrapper-vacancy">
+                    <p>Страны</p><span class="sidebar__filter-remove"></span>
+                  </div>
+                </li>
+                <li class="sidebar__filter-item sidebar__li">
+                  <div class="sidebar__filter-wrapper type-work-filter-wrapper">
+                    <p>Типы работ</p><span class="sidebar__filter-remove"></span>
+                  </div>
+                </li>
+                <li class="sidebar__filter-item sidebar__li">
+                  <div class="sidebar__filter-wrapper date-terms-filter-wrapper">
+                    <p>Даты и сроки</p><span class="sidebar__filter-remove"></span>
+                  </div>
+                </li>
+                <li class="sidebar__filter-item sidebar__li">
+                  <div class="sidebar__filter-wrapper managers-filter-wrapper-vacancy">
+                    <p>Менеджер</p><span class="sidebar__filter-remove"></span>
+                  </div>
+                </li>
+                <li class="sidebar__filter-item sidebar__li">
+                  <div class="sidebar__filter-wrapper stages-vacancies-filter-wrapper">
+                    <p>Этапы вакансий</p><span class="sidebar__filter-remove"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sidebar__stats">
+              <div class="sidebar__stats-top">
+                <ul class="sidebar__stat">
+                  <li class="sidebar__stat-item sidebar__li">
+                    <div class="sidebar__stats-wrapper selecting-stats-wrapper">
+                      <p>Сотрировка</p><span class="sidebar__filter-remove"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="sidebar__stats-bottom">
+                <ul class="sidebar__stat">
+                  <li class="sidebar__stat-item sidebar__li">
+                    <div class="sidebar__stats-wrapper">
+                      <p>Распечатать отчет</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar__wrapper sidebar__stat-nums_vacancy"></div>
+          </div>
+        </div>
+      </div>
+      <div class="rows-wrapper vacancy-rows-wrapper"></div>
+    </main>
+    <div class="popup">
+      <div class="popup__layer">
+        <div class="sidebar-popup" id="country-popup-vacancy"></div>
+        <div class="sidebar-popup managers-popup-vacancy" id="managers-popup"></div>
+        <div class="sidebar-popup" id="status-popup"></div>
+        <div class="sidebar-popup" id="selecting-popup"></div>
+        <div class="sidebar-popup" id="type-work-popup">
+          <form></form>
+        </div>
+        <div class="sidebar-popup" id="date-terms-popup"></div>
+        <div class="vacancy-modal-popup" id="employer-type-popup">
+          <form>
+            <p class="vacancy-modal__title">Введите имя работодателя или название организации	</p>
+            <div class="input-group" data-loading="false">
+              <input class="find-employer info-area" id="find-employer" type="text">
+              <ul class="autocomplete-result-list"></ul>
+            </div>
+            <button class="confirm-bnt"><span>OK</span></button>
+          </form>
+        </div>
+        <div class="vacancy-modal-popup" id="employer-type-popup2">
+          <form>
+            <p class="vacancy-modal__title">Введите имя работодателя или название организации	</p>
+            <div class="input-group" data-loading="false">
+              <input class="find-employer info-area" id="find-employer-2" type="text">
+              <ul class="autocomplete-result-list"></ul>
+            </div>
+            <button class="confirm-bnt"><span>OK</span></button>
+          </form>
+        </div>
+        <div class="vacancy-modal-popup" id="work-type-popup">
+          <form>
+            <div class="form-group">
+              <p>Thompson Equestrian Partners</p>
+              <div class="input-group radio-group-type-2 hot top-group">
+                <div class="group">
+                  <input type="radio" id="season-rbtn" name="vacancies-rbtn" checked="true" value="Сезонная">
+                  <label for="season-rbtn">Сезонная</label>
+                  <input type="radio" id="practice-rbtn" name="vacancies-rbtn" value="Практика">
+                  <label for="practice-rbtn">Практика</label>
+                  <input type="radio" id="work-rbtn" name="vacancies-rbtn" value="Рабочая">
+                  <label for="work-rbtn">Рабочая</label>
+                </div>
+              </div>
+              <div class="input-group radio-group-type-2 hot bottom-group">
+                <div class="group">
+                  <input type="checkbox" id="greenhouses-chbx-2" name="greenhouses-chbx-2" checked="true" value="Теплицы">
+                  <label for="greenhouses-chbx-2">Теплицы</label>
+                  <input type="checkbox" id="flowers-chbx-2" name="flowers-chbx-2" value="Цветы">
+                  <label for="flowers-chbx-2">Цветы</label>
+                  <input type="checkbox" id="fields-chbx-2" name="fields-chbx-2" value="Поля">
+                  <label for="fields-chbx-2">Поля</label>
+                </div>
+              </div>
+              <button class="confirm-bnt"><span>OK</span></button>
+            </div>
+          </form>
+        </div>
+        <div class="vacancy-modal-popup" id="price-popup">
+          <form>
+            <p class="vacancy-modal__title">Какая-то надпись</p>
+            <div class="input-group" data-loading="false">
+              <input class="calc-price" id="calc-price" type="text">
+            </div>
+            <div class="btn-group">
+              <button class="confirm-bnt"><span>OK</span></button>
+              <button class="cancel-bnt"><span>Отмена</span></button>
+            </div>
+          </form>
+        </div>
+        <div class="modal micromodal-slide" id="modal-3">
+          <div class="modal__overlay">
+            <div class="modal__wrapper my-modal-wrapper">
+              <div class="modal__container work-modal my-modal"><span class="modal__close"><span></span><span></span></span>
+                <div class="sidebar">
+                  <div class="sidebar__layout">
+                    <div class="f-container">
+                      <div class="sidebar__info">
+                        <form class="vacancy-modal__sidebar-vacancy-form">
+                          <div class="manager-select-wrap"></div>
+                        </form>
+                      </div>
+                      <div class="sidebar__notes vacancy-modal__sidebar-notes"></div>
+                      <div class="sidebar__actions">
+                        <ul class="sidebar__action">
+                          <li class="sidebar__action-item"></li>
+                        </ul>
+                      </div>
+                      <div class="sidebar__menu">
+                        <ul class="sidebar__filter">
+                          <li class="sidebar__filter-item active" data-part="vacancy-data">
+                            <div class="sidebar__filter-wrapper">
+                              <p>Данные вакансии</p>
+                            </div>
+                          </li>
+                          <li class="sidebar__filter-item" data-part="check-list">
+                            <div class="sidebar__filter-wrapper">
+                              <p>Чек-лист</p>
+                            </div>
+                          </li>
+                          <li class="sidebar__filter-item" data-part="print-pt">
+                            <div class="sidebar__filter-wrapper">
+                              <p>Распечатать ПТ</p>
+                            </div>
+                          </li>
+                          <li class="sidebar__filter-item archive-item" data-part="archive-vacancy" id="vacancy-archive"></li>
+                          <li class="sidebar__filter-item copy-item" data-part="create-vacancy-copy" id="vacancy-copy"></li>
+                          <li class="sidebar__filter-item delete-item" id="vacancy-delete"></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rows">
+                  <div class="vacancy-data my-modal-part active" id="vacancy-data">
+                    <div class="row main-info modal-row">
+                      <div class="modal-row__layer main-info_left"></div>
+                      <div class="modal-row__layer main-info_right"></div>
+                    </div>
+                    <div class="row clients modal-row"></div>
+                    <div class="row demands modal-row"></div>
+                    <div class="row terms modal-row"></div>
+                    <div class="row feedback-vacancy feedback modal-row"></div>
+                  </div>
+                  <div class="check-list my-modal-part" id="check-list">
+                    <p>Чек лист</p>
+                  </div>
+                  <div class="print-pt my-modal-part" id="print-pt">
+                    <p>Распечатать ПТ</p>
+                  </div>
+                  <div class="archive-vacancy my-modal-part" id="archive-vacancy">
+                    <p>Архивировать вакансию</p>
+                  </div>
+                  <div class="create-vacancy-copy my-modal-part" id="create-vacancy-copy">
+                    <p>Создать копию вакансии</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs.min.js?v=1608586900476" defer></script>
+    <script src="js/script.min.js?v=1608586900476" async></script>
+  </body>
+</html>

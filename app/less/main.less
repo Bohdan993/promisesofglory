@@ -1,0 +1,207 @@
+@import url("app/less/_var.less");
+@import url("app/less/_mixins.less");
+@import url("app/less/_fonts.less");
+@import url("app/less/_init-sprites.less");
+
+html {
+  font-size: 14px;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow: hidden;
+  color: @white;
+  height: 100%;
+  width: 100%;
+ 
+}
+
+::selection {
+  background: rgba(@main-color);
+  color: @white;
+}
+body {
+  margin: 0;
+  padding: 0;
+  // font-family: 'Dancing Script', cursive;
+  font-family: 'Geometria', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: @font-color;
+  // letter-spacing: 1.15px;
+  letter-spacing: 0.01rem;
+  line-height: 1.15;
+  background-color: @white;
+
+}
+
+
+
+
+
+div,
+a {
+  outline: none;
+  color: @font-color;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img, picture, source{
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  overflow-wrap: break-word;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  color: @white;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+input, select {
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+
+label {
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight:400;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
+main {
+  height: 100%;
+  width: 100%;
+  // overflow-y: scroll;
+}
+.center {
+  max-width: 1200px + 30px + 30px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.f-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+.ico {
+  display: block;
+  // max-width: 100%;
+  // max-height: 100%;
+}
+
+
+//|||||||||||||||||||COMMON ELEMENTS|||||||||||||||||||//
+
+.main-btn {
+  font-family: Nunito,sans-serif;
+  border-radius: 25px;
+  background: @main-color;
+  width: 100%;
+  max-width: 150px;
+  letter-spacing: 0rem;
+  font-size: (16px/16px) * 1rem;
+  line-height: 1;
+  font-weight: 600;
+  padding: 14px 18px;
+  text-align: center;
+  color: @white;
+  transition: color .20s cubic-bezier(.75,.1,.25,.9);
+  outline: none;
+  border: none;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+
+  letter-spacing: 0.1px;
+  position: relative;
+
+    &:hover {
+      color: @white;
+      & .btn-overlay {
+        transform: translate(-50%, -50%) scale(1,1);
+      }
+  }
+}
+
+
+main.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  // overflow-x: auto;
+}
+
+
+
+
+////////Animations/////
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+
+//|||||||||||||||||||COMMON ELEMENTS END|||||||||||||||||||//
+
+//////////////////////////
+
+//////////////////////////
+@import url("app/less/_menu.less");
+@import url("app/less/_header.less");
+@import url("app/less/_popup.less");
+
+@import url("app/less/sprite.less");

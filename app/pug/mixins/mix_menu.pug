@@ -1,0 +1,8 @@
+mixin menu(list, clazz)
+			ul(class=`${clazz}__list`)
+				each item, index in list
+					li(class=`${clazz}__list-item`)
+						a(
+						class=`${clazz}__link`
+						href=item.url ? item.url : '#'
+						)= item.text

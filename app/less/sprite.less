@@ -1,0 +1,131 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@s-facebook-name: 's-facebook';
+@s-facebook-x: 32px;
+@s-facebook-y: 0px;
+@s-facebook-offset-x: -32px;
+@s-facebook-offset-y: 0px;
+@s-facebook-width: 18px;
+@s-facebook-height: 18px;
+@s-facebook-total-width: 50px;
+@s-facebook-total-height: 50px;
+@s-facebook-image: 'sprite.png';
+@s-facebook: 32px 0px -32px 0px 18px 18px 50px 50px 'sprite.png' 's-facebook';
+@s-instagram-name: 's-instagram';
+@s-instagram-x: 0px;
+@s-instagram-y: 32px;
+@s-instagram-offset-x: 0px;
+@s-instagram-offset-y: -32px;
+@s-instagram-width: 18px;
+@s-instagram-height: 18px;
+@s-instagram-total-width: 50px;
+@s-instagram-total-height: 50px;
+@s-instagram-image: 'sprite.png';
+@s-instagram: 0px 32px 0px -32px 18px 18px 50px 50px 'sprite.png' 's-instagram';
+@s-quotes-name: 's-quotes';
+@s-quotes-x: 0px;
+@s-quotes-y: 0px;
+@s-quotes-offset-x: 0px;
+@s-quotes-offset-y: 0px;
+@s-quotes-width: 32px;
+@s-quotes-height: 32px;
+@s-quotes-total-width: 50px;
+@s-quotes-total-height: 50px;
+@s-quotes-image: 'sprite.png';
+@s-quotes: 0px 0px 0px 0px 32px 32px 50px 50px 'sprite.png' 's-quotes';
+@s-shopping-bag-name: 's-shopping-bag';
+@s-shopping-bag-x: 18px;
+@s-shopping-bag-y: 32px;
+@s-shopping-bag-offset-x: -18px;
+@s-shopping-bag-offset-y: -32px;
+@s-shopping-bag-width: 18px;
+@s-shopping-bag-height: 18px;
+@s-shopping-bag-total-width: 50px;
+@s-shopping-bag-total-height: 50px;
+@s-shopping-bag-image: 'sprite.png';
+@s-shopping-bag: 18px 32px -18px -32px 18px 18px 50px 50px 'sprite.png' 's-shopping-bag';
+@spritesheet-width: 50px;
+@spritesheet-height: 50px;
+@spritesheet-image: 'sprite.png';
+@spritesheet-sprites: @s-facebook @s-instagram @s-quotes @s-shopping-bag;
+@spritesheet: 50px 50px 'sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  background-image: e(%('url(../img/sprites/png/sprite.png)', e(@sprite-image)));
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
