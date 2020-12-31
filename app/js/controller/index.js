@@ -1,14 +1,19 @@
 import {
-	InitSlider
+	InitSlider,
+	FixedMenu
 } from '../model'
-// import {} from '../view'
+import {header, menu} from '../view'
 
 const app = {
 	init() {
 		this.is()
+		this.fm()
 	},
 	is(){
 		InitSlider()
+	},
+	fm(){
+		FixedMenu(menu, header)
 	}
 
 }

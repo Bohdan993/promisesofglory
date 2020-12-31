@@ -4,22 +4,21 @@
 @import url("app/less/_init-sprites.less");
 
 html {
-  font-size: 14px;
+  font-size: 15px;
 }
 html {
   scroll-behavior: smooth;
 }
 html,
 body {
-  overflow: hidden;
-  color: @white;
+  color: @font-color;
   height: 100%;
   width: 100%;
  
 }
 
 ::selection {
-  background: rgba(@main-color);
+  background: rgba(@secondary);
   color: @white;
 }
 body {
@@ -111,9 +110,7 @@ button {
 
 
 main {
-  height: 100%;
   width: 100%;
-  // overflow-y: scroll;
 }
 .center {
   max-width: 1200px + 30px + 30px;
@@ -141,45 +138,69 @@ main {
 //|||||||||||||||||||COMMON ELEMENTS|||||||||||||||||||//
 
 .main-btn {
-  font-family: Nunito,sans-serif;
-  border-radius: 25px;
-  background: @main-color;
+  font-family: Geometria, sans-serif;
+  font-weight: 500;
+  background: @font-color;
   width: 100%;
-  max-width: 150px;
-  letter-spacing: 0rem;
-  font-size: (16px/16px) * 1rem;
+  font-size: (14px/15px) * 1rem;
   line-height: 1;
-  font-weight: 600;
-  padding: 14px 18px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: @white;
-  transition: color .20s cubic-bezier(.75,.1,.25,.9);
+  max-width: 200px;
   outline: none;
-  border: none;
-  width: 100%;
+  border: 2px solid @secondary;
   overflow: hidden;
   cursor: pointer;
-
   letter-spacing: 0.1px;
   position: relative;
+  .btn-overlay {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    z-index:2;
+    border-radius: 50%;
+    transition: transform .25s cubic-bezier(.75,.1,.25,.9);
+    transform: translate(-50%, -50%) scale(0,0);
+    background: @secondary;
+  }
 
-    &:hover {
-      color: @white;
-      & .btn-overlay {
-        transform: translate(-50%, -50%) scale(1,1);
-      }
+  .btn-text {
+    position: relative;
+    z-index: 3;
+  }
+
+  &:hover {
+    color: @white;
+    .btn-overlay {
+      transform: translate(-50%, -50%) scale(1,1);
+    }
   }
 }
 
-
-main.main {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-  // overflow-x: auto;
+.h2-title__layer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
+.h2-title {
+  .fSize(60vw, 60px * (768/1200), 60px, 768px, 1200px);
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  line-height: 1;
+  color: @font-color;
+}
+
+.section__layout {
+  .fPa(40%, 40%, 40px, 40px, 992px,  1200px);
+}
 
 
 
@@ -202,6 +223,7 @@ main.main {
 //////////////////////////
 @import url("app/less/_menu.less");
 @import url("app/less/_header.less");
+@import url("app/less/_carts.less");
 @import url("app/less/_popup.less");
 
 @import url("app/less/sprite.less");

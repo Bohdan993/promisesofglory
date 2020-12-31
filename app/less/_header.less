@@ -1,7 +1,9 @@
 .header__layout {
 	height: calc(100vh - 34px);
 	background: @font-color;
-
+	&.full {
+		margin-top: 34px;
+	}
 	.f-container {
 		justify-content: space-between;
 	}
@@ -21,4 +23,73 @@
 	.center, .f-container {
 		height: 100%;
 	}
+
+	.f-container {
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+}
+
+.slide-title-layer {
+	flex-basis: 100%;
+	margin-bottom: 25px;
+}
+
+.slide-title {
+	text-shadow: -2px 1px 4px rgba(0, 0, 0, 1);
+	color: @white;
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	text-align: center;
+	.fSize(90vw, 90px * (992/1600), 90px, 768px, 1200px);
+
+	span {
+		display: block;
+		color: @secondary;
+	}
+}
+.slide-description-layer {
+	margin-bottom: 70px;
+	flex-basis: 100%;
+
+}
+.slide-description {
+	font-size: 16px;
+	margin-left: auto;
+	color: @white;
+	display: block;
+	max-width: 267px;
+}
+
+
+.header__arrows {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	z-index: 1;
+	max-width: 1200px;
+
+	.splide__arrow {
+		width: 42px;
+		height: 42px;
+	}
+}
+
+.header__arrow_next, .header__arrow_prev {
+	transition: background 0.25s linear;
+	background: unset;
+	&:hover {
+		background: @secondary;
+	}
+	
+}
+
+.slide-button-layer {
+	flex-basis: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

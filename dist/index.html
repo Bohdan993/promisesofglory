@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/libs.min.css?v=1609289809290">
-    <link rel="stylesheet" href="css/main.min.css?v=1609289809290">
+    <link rel="stylesheet" href="css/libs.min.css?v=1609381144958">
+    <link rel="stylesheet" href="css/main.min.css?v=1609381144958">
   </head>
   <body>
     <header class="header">
@@ -22,26 +22,20 @@
                 </ul>
               </nav>
               <div class="menu__logo"><img class="logo" src="" alt="Logo"></div>
-              <div class="menu__icons"><a href="#"></a><a href="https://facebook.com" target="_blank" rel="noopener noreffer nofollow"><span class="menu__ico"><i class="ico s-facebook"></i></span></a><a href="https://facebook.com" target="_blank" rel="noopener noreffer nofollow"><span class="menu__ico"><i class="ico s-instagram"></i></span></a></div>
+              <div class="menu__icons"><a class="shopping-bag-link" href="#"><span class="menu__ico"><i class="ico s-shopping-bag"></i></span><span class="menu__price">$300.00</span></a><a href="https://facebook.com" target="_blank" rel="noopener noreffer nofollow"><span class="menu__ico"><i class="ico s-facebook"></i></span></a><a href="https://facebook.com" target="_blank" rel="noopener noreffer nofollow"><span class="menu__ico"><i class="ico s-instagram"></i></span></a></div>
             </div>
           </div>
         </div>
       </div>
       <div class="header__layout">
         <div class="splide header__slider">
+          <div class="splide__arrows header__arrows">
+            <button class="splide__arrow splide__arrow--prev header__arrow_prev"><i class="ico s-arrow-left"></i></button>
+            <button class="splide__arrow splide__arrow--next header__arrow_next"><i class="ico s-arrow-right"></i></button>
+          </div>
           <div class="splide__track header__slider-track">
             <div class="splide__list header__slider-list">
-              <div class="splide__slide header__slider-slide"><img src="img/header-bg.png" alt="Slide">
-                <div class="center">
-                  <div class="f-container">Slide 01</div>
-                </div>
-              </div>
-              <div class="splide__slide header__slider-slide"><img src="img/header-bg.png" alt="Slide">
-                <div class="center">
-                  <div class="f-container"></div>
-                </div>
-              </div>
-              <div class="splide__slide header__slider-slide"><img src="img/header-bg.png" alt="Slide">
+              <div class="splide__slide header__slider-slide"><img data-splide-lazy="img/header-bg.png" alt="Slide">
                 <div class="center">
                   <div class="f-container">
                     <div class="slide-title-layer">
@@ -53,7 +47,39 @@
                         a reminder, a glorious message!
                       </p>
                     </div>
-                    <div class="slide-button-layer"><a class="slide-button" href="#"><span>Shop Now</span></a></div>
+                    <div class="slide-button-layer"><a class="slide-button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">SHOP NOW</span></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="splide__slide header__slider-slide"><img data-splide-lazy="img/header-bg.png" alt="Slide">
+                <div class="center">
+                  <div class="f-container">
+                    <div class="slide-title-layer">
+                      <h2 class="slide-title">Immerse yourself<span>with images from Land</span></h2>
+                    </div>
+                    <div class="slide-description-layer">
+                      <p class="slide-description">
+                        Give your walls a voice -
+                        a reminder, a glorious message!
+                      </p>
+                    </div>
+                    <div class="slide-button-layer"><a class="slide-button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">SHOP NOW</span></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="splide__slide header__slider-slide"><img data-splide-lazy="img/header-bg.png" alt="Slide">
+                <div class="center">
+                  <div class="f-container">
+                    <div class="slide-title-layer">
+                      <h2 class="slide-title">Immerse yourself<span>with images from Land</span></h2>
+                    </div>
+                    <div class="slide-description-layer">
+                      <p class="slide-description">
+                        Give your walls a voice -
+                        a reminder, a glorious message!
+                      </p>
+                    </div>
+                    <div class="slide-button-layer"><a class="slide-button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">SHOP NOW</span></a></div>
                   </div>
                 </div>
               </div>
@@ -62,7 +88,131 @@
         </div>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <div class="cards">
+        <div class="cards__layout section__layout">
+          <div class="center">
+            <div class="f-container">
+              <div class="h2-title__layer">
+                <h2 class="h2-title">Our top sales</h2>
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <div class="f-container f-container__cards">
+              <div class="cards__layer">
+                <!--для подгружаемых карточек при клике на кнопку <<More>> добавить класс .fadeIn-->
+                <div class="card">
+                  <div class="card__inner">
+                    <div class="card__image-layer"><img class="card__image" src="img/cart1.png" alt="Card Product"></div>
+                    <div class="card-text">
+                      <div class="card__title-layer">
+                        <h3 class="card__title">Sea of galilee quilt</h3>
+                      </div>
+                      <div class="card__description-layer">
+                        <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
+                      </div>
+                      <div class="card__price-layer"><span class="card__price">$399</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__inner">
+                    <div class="card__image-layer"><img class="card__image" src="img/cart2.png" alt="Card Product"></div>
+                    <div class="card-text">
+                      <div class="card__title-layer">
+                        <h3 class="card__title">Sea of galilee quilt</h3>
+                      </div>
+                      <div class="card__description-layer">
+                        <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
+                      </div>
+                      <div class="card__price-layer"><span class="card__price">$399</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__inner">
+                    <div class="card__image-layer"><img class="card__image" src="img/cart3.png" alt="Card Product"></div>
+                    <div class="card-text">
+                      <div class="card__title-layer">
+                        <h3 class="card__title">Sea of galilee quilt</h3>
+                      </div>
+                      <div class="card__description-layer">
+                        <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
+                      </div>
+                      <div class="card__price-layer"><span class="card__price">$399</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards__button-layer"><a class="cards__button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">More</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="about__layout section__layout">
+          <div class="center">
+            <div class="f-container">
+              <article class="about__article-left">
+                <div class="h2-title__layer">
+                  <h2 class="h2-title">About Our Quilts</h2>
+                </div>
+              </article>
+              <article class="about__article-right">
+                <div class="h2-title__layer">
+                  <h2 class="h2-title">100% Handmade</h2>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="posts__layout section__layout">
+          <div class="center">
+            <div class="f-container">
+              <div class="posts__layer">
+                <div class="post"><img>
+                  <div class="h2-title__layer">
+                    <h2 class="h2-title">Our Story</h2>
+                  </div>
+                </div>
+                <div class="post"><img>
+                  <div class="h2-title__layer">
+                    <h2 class="h2-title">Our Process</h2>
+                  </div>
+                </div>
+                <div class="post"><img>
+                  <div class="h2-title__layer">
+                    <h2 class="h2-title">Bringing Glory Home</h2>
+                  </div>
+                </div>
+                <div class="post"><img>
+                  <div class="h2-title__layer">
+                    <h2 class="h2-title">Our gallery</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback">
+        <div class="feedback__layout section__layout">
+          <div class="center">
+            <div class="f-container">
+              <div class="h2-title__layer">
+                <h2 class="h2-title">Customer Review</h2>
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <div class="f-container"></div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer">
       <div class="footer__layout">
         <div class="center">
@@ -71,7 +221,7 @@
       </div>
     </footer>
     <div class="popups"></div>
-    <script src="js/libs.min.js?v=1609289809290" defer></script>
-    <script src="js/script.min.js?v=1609289809290" async></script>
+    <script src="js/libs.min.js?v=1609381144959" defer></script>
+    <script src="js/script.min.js?v=1609381144959" async></script>
   </body>
 </html>
