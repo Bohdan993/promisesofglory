@@ -1,4 +1,29 @@
+-
+	var menu = [
+		{
+			text: 'Terms Of Use', 
+			url: '#', 
+		},
+		{
+			text: 'Privacy Policy', 
+			url: '#', 
+		},
+		{
+			text: 'Contatc Us', 
+			url: '#',
+		},
+	];
+
+
 footer.footer
 	.footer__layout
 		.center
-			.f-container
+			.f-container.f-container__footer
+				.footer__name-layer
+					p.footer__name
+						|© 
+						span
+							|2020
+						|Promises of Glory 
+				.footer__policy-layer
+					+menu(menu, 'footer')

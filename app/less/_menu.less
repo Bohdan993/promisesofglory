@@ -31,9 +31,10 @@
 }
 
 .menu__link {
-	font-size: 11px;
+	font-size: 11/15  * 1rem;
 	font-weight: 500;
 	letter-spacing: 0.4px;
+	text-transform: uppercase;
 }
 
 .menu__icons {
@@ -41,6 +42,18 @@
 	align-items: center;
 	justify-content: flex-end;
 	flex-basis: 315/1200 * 100%;
+
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+
+	.social-link {
+		&:not(:last-child) {
+			margin-right: 8px;
+		}
+	}
 }
 
 .menu__ico {
@@ -65,7 +78,7 @@
 			content: '';
 			position: absolute;
 			width: 0;
-			bottom: -10px;
+			bottom: -11px;
 			left: 0;
 			height: 2px;
 			transition: width 0.25s linear;
@@ -83,6 +96,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-right: 30px;
 
 	&:hover {
 		.menu__ico {

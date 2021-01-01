@@ -37,9 +37,6 @@ body {
 }
 
 
-
-
-
 div,
 a {
   outline: none;
@@ -157,6 +154,7 @@ main {
   cursor: pointer;
   letter-spacing: 0.1px;
   position: relative;
+  transition: color .25s linear;
   .btn-overlay {
     position: absolute;
     width: 300px;
@@ -176,9 +174,25 @@ main {
   }
 
   &:hover {
-    color: @white;
+    color: @font-color;
     .btn-overlay {
       transform: translate(-50%, -50%) scale(1,1);
+    }
+  }
+
+  &.reverse {
+    background: @secondary;
+    color: @font-color;
+
+    .btn-overlay {
+      background: @font-color;
+    }
+
+    &:hover {
+      color: @white;
+      .btn-overlay {
+        transform: translate(-50%, -50%) scale(1,1);
+      }
     }
   }
 }
@@ -187,6 +201,7 @@ main {
   width: 100%;
   text-align: center;
   padding-bottom: 30px;
+
 }
 
 .h2-title {
@@ -194,13 +209,40 @@ main {
   font-weight: 700;
   font-family: 'Dancing Script', cursive;
   text-align: center;
-  line-height: 1;
+  line-height: 1.35;
   color: @font-color;
 }
 
 .section__layout {
   .fPa(40%, 40%, 40px, 40px, 992px,  1200px);
 }
+
+.floating-image-layer {
+  position: absolute;
+}
+
+.floating-image-layer-1 {
+  bottom: -15%;
+  left: 0;
+}
+
+.floating-image-layer-2 {
+  top: 60%;
+  right: 0;
+}
+
+
+.floating-image-layer-3 {
+  top: 10%;
+  left: 0;
+}
+
+
+.social-link {
+  cursor: pointer;
+}
+
+
 
 
 
@@ -224,6 +266,13 @@ main {
 @import url("app/less/_menu.less");
 @import url("app/less/_header.less");
 @import url("app/less/_carts.less");
+@import url("app/less/_about.less");
+@import url("app/less/_video.less");
+@import url("app/less/_posts.less");
+@import url("app/less/_feedback.less");
+@import url("app/less/_form.less");
+@import url("app/less/_address.less");
+@import url("app/less/_footer.less");
 @import url("app/less/_popup.less");
 
 @import url("app/less/sprite.less");

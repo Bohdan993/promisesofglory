@@ -1,0 +1,121 @@
+.video__layout {
+	position: relative;
+}
+
+.video__background {
+	position: relative;
+	width: 100%;
+	// background: url(../img/video-bg.png) center no-repeat/cover;
+	// background-attachment: fixed;
+
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 652/1366 * 100%;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.6);
+		z-index: 1;
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.video__background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.center__video {
+	position: absolute;
+	z-index: 2;
+	// top: 50%;
+	// left: 50%;
+	// transform: translate(-50%, -50%);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 100%;
+	width: 100%;
+
+	.f-container {
+		height: 100%;
+	}
+
+}
+
+.video__layer {
+	width: 100%;
+	height: 100%;
+	.fPa(60%, 60%, 60px, 60px, 992px,  1200);
+}
+
+.video__play-button-layer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.video__text {
+	color: @white;
+}
+
+
+.video__play-button-layer {
+	cursor: pointer;
+	transition: transform 0.25s linear;
+
+	&:hover {
+		transform: translate(-50%, -50%) scale(1.05);
+	}
+}
+
+
+// .video__triangle {
+//     position: relative;
+//     transform: scale(2);
+//     width: 22px;
+//     height: 17px;
+//     border-left: 3px solid transparent;
+//     border-bottom: 3px solid
+// }
+// .video__triangle,
+// .video__triangle::before {
+//     display: block;
+//     box-sizing: border-box;
+//     border-right: 3px solid transparent
+// }
+// .video__triangle::before {
+//     content: "";
+//     position: absolute;
+//     width: 20px;
+//     height: 20px;
+//     border-left: 3px solid;
+//     border-top: 3px solid;
+//     border-bottom: 3px solid transparent;
+//     transform: rotate(45deg) skew(10deg,10deg);
+//     left: -2px;
+//     bottom: -13px
+// }

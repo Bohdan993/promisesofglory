@@ -1,24 +1,48 @@
 import {Splide} from '../../../libs/libs'
+import {default as Extention} from './SliderExtention'
 
 
+console.log(Extention)
+const InitSlider = (sliders) => {
 
 
-const InitSlider = () => {
-	new Splide( '.splide', {
+	new Splide( sliders.headerSlider, {
 		type   : 'loop',
-		// autoplay: true, 
-		// interval: 4000,
+		autoplay: true, 
+		interval: 4000,
+		// height  : '100vh',
 		lazyLoad: 'nearby',
 		pagination: false,
 		pauseOnHover: true,
 		cover: true,
-		// classes: {
-		// 	arrows: 'splide__arrows header__slider-arrrows',
-		// 	arrow : 'splide__arrow header__slider-arrrow',
-		// 	prev  : 'splide__arrow--prev header__slider-arrrow-prev',
-		// 	next  : 'splide__arrow--next header__slider-arrrow-next',
-		// },
 	}).mount();
+
+
+
+	for ( let i = 0, len = sliders.aboutSliders.length; i < len; i++ ) {
+
+		new Splide( sliders.aboutSliders[ i ], {
+			type   : 'fade',
+			autoplay: true, 
+			rewind: true,
+			interval: 5000,
+			arrows: false,
+			speed: 1500,
+			drag: false,
+			lazyLoad: 'nearby',
+			pagination: false,
+			pauseOnHover: false
+		} ).mount();
+	}
+
+	new Splide( sliders.feedbackSlider, {
+		type   : 'loop',
+		lazyLoad: 'nearby',
+		pagination: false,
+		pauseOnHover: true
+	}).mount({Extention});
+
+
 }
 
 

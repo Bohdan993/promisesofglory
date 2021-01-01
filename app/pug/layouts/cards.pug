@@ -1,5 +1,7 @@
 .cards
 	.cards__layout.section__layout
+		.floating-image-layer.floating-image-layer-1
+			img.floating-image(src="img/olive1.png" alt="Olive tree branch")
 		.center
 			.f-container
 				.h2-title__layer
@@ -8,9 +10,9 @@
 		.center
 			.f-container.f-container__cards
 				.cards__layer
-					//для подгружаемых карточек при клике на кнопку <<More>> добавить класс .fadeIn
+					//для подгружаемых карточек (класс .card) при клике на кнопку <<More>> добавить класс .fadeIn
 					.card
-						.card__inner
+						a.card__inner(href="#")
 							.card__image-layer
 								img(src="img/cart1.png" alt="Card Product").card__image
 							.card-text
@@ -24,7 +26,7 @@
 									span.card__price
 										|$399
 					.card
-						.card__inner
+						a.card__inner(href="#")
 							.card__image-layer
 								img(src="img/cart2.png" alt="Card Product").card__image
 							.card-text
@@ -38,7 +40,7 @@
 									span.card__price
 										|$399
 					.card
-						.card__inner
+						a.card__inner(href="#")
 							.card__image-layer
 								img(src="img/cart3.png" alt="Card Product").card__image
 							.card-text

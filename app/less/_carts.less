@@ -2,10 +2,15 @@
 	margin: 0 -12px;
 }
 
+.cards__layout {
+	position: relative;
+}
+
 .card {
 	padding: 0 24px/2;
 	// opacity: 0;
-
+	height: 100%;
+	.fPa(0%, 55%, 0px, 55px, 992px,  1200px);
 	&.fadeIn {
 		animation: fadeIn 0.75s linear forwards;
 	}
@@ -14,16 +19,22 @@
 .cards__layer {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
 	align-items: stretch;
-	.fPa(0%, 55%, 0px, 55px, 992px,  1200px);
 }
 
 .card__inner {
 	max-width: 380px;
-	box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.2);
+	box-shadow: rgba(0,0,0,.1) 1px 2px 4px 1px;
 	padding: 35px 40px;
-	height: 100%;
+	// height: 100%;
+	transition: box-shadow .25s linear, transform .25s cubic-bezier(.75,.1,.25,.9);
+
+	&:hover {
+		transform: translateY(-1.5%) scale(1.01);
+		box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.25);
+	}
 }
 
 .card__image {
@@ -42,8 +53,30 @@
 	margin-bottom: 30px; 
 }
 
+.card__price-layer {
+	position: relative;
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 40/300 * 100%;
+		height: 1px;
+		background: @font-color;
+	}
+
+	&:before {
+		left: 53/300 * 100%;
+	}
+
+	&:after {
+		right: 53/300 * 100%;
+	}
+}
+
 .card__title {
-	font-size: 20/15 * 1rem;
+	.fSize(20vw, 20px * (992/1200), 20px, 992px, 1200px);
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -56,7 +89,7 @@
 
 .card__price {
 	display: block;
-	font-size: 24/15 * 1rem;
+	.fSize(24vw, 24px * (768/1200), 24px, 768px, 1200px);
 	font-weight: 700;
 }
 
