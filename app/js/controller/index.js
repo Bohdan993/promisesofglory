@@ -11,7 +11,9 @@ import {
 	feedbackSlider,
 	playBtn,
 	videoLayer,
-	videoParent
+	videoParent,
+	presentationImageSlider,
+	presentationThumbnailsImageSlider
 } from '../view'
 
 const app = {
@@ -24,7 +26,9 @@ const app = {
 		InitSlider({
 			headerSlider,
 			aboutSliders,
-			feedbackSlider
+			feedbackSlider,
+			presentationImageSlider,
+			presentationThumbnailsImageSlider
 		})
 	},
 	fm(){

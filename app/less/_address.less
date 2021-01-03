@@ -77,12 +77,18 @@
 	font-weight: 900;
 	color: @secondary;
 	text-align: center;
-	line-height: 1.75;
-	letter-spacing: 2px;
+	line-height: 2;
+	letter-spacing: 1.5px;
 }
 
 .address__mail {
 	.fSize(18vw, 18px * (992/1200), 18px, 992px, 1200px);
+	font-weight: 900;
+	transition: color .25s linear;
+
+	&:hover {
+		color: @secondary;
+	}
 }
 
 
@@ -105,4 +111,12 @@
 		background: @secondary;
 	}
 	
+}
+
+.address__street-layer {
+	padding-bottom: 25px;
+}
+
+.address__mail-layer {
+	padding-bottom: 45px;
 }

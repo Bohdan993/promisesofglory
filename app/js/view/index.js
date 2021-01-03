@@ -8,6 +8,8 @@ const feedbackSlider = document.querySelector('.feedback__slider')
 const playBtn = document.querySelector('.video__play-button-layer')
 const videoLayer = document.querySelector('.video__background')
 const videoParent = document.querySelector('.video__layout')
+const presentationImageSlider = document.querySelector('.presentation__image-slider')
+const presentationThumbnailsImageSlider = document.querySelector('.presentation__thumbnails-image-slider')
 
 export {
 	menu, 
@@ -17,5 +19,7 @@ export {
 	feedbackSlider,
 	playBtn,
 	videoLayer,
-	videoParent
+	videoParent,
+	presentationImageSlider,
+	presentationThumbnailsImageSlider
 }

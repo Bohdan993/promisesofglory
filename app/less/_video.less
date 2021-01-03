@@ -76,10 +76,17 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	width: 140/1366 * 100vw;
+	min-width: 45px;
 }
 
 .video__text {
 	color: @white;
+	font-weight: 500;
+	.fSize(24vw, 24px * (992/1200), 24px, 992px, 1200px);
+	span {
+		color: @secondary;
+	}
 }
 
 

@@ -1,19 +1,24 @@
 .f-container__cards {
-	margin: 0 -12px;
+	margin: 0 -13px;
 }
 
 .cards__layout {
 	position: relative;
 }
 
+.cards__mobile {
+	display: none;
+}
+
 .card {
-	padding: 0 24px/2;
+	padding: 0 26px/2;
 	// opacity: 0;
+	flex-basis: 33%;
+	flex-grow: 0;
+	flex-shrink: 1;
 	height: 100%;
 	.fPa(0%, 55%, 0px, 55px, 992px,  1200px);
-	&.fadeIn {
-		animation: fadeIn 0.75s linear forwards;
-	}
+
 }
 
 .cards__layer {
@@ -22,6 +27,18 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: stretch;
+}
+
+.cards__row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: no-wrap;
+	align-items: stretch;
+
+	&.fadeIn {
+		animation: fadeIn 0.75s linear forwards;
+	}
 }
 
 .card__inner {

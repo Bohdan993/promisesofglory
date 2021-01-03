@@ -7,54 +7,123 @@
 				.h2-title__layer
 					h2.h2-title
 						|Our top sales
-		.center
+		.center.center__cards
 			.f-container.f-container__cards
-				.cards__layer
-					//для подгружаемых карточек (класс .card) при клике на кнопку <<More>> добавить класс .fadeIn
-					.card
-						a.card__inner(href="#")
-							.card__image-layer
-								img(src="img/cart1.png" alt="Card Product").card__image
-							.card-text
-								.card__title-layer
-									h3.card__title
-										|Sea of galilee quilt
-								.card__description-layer
-									p.card__description
-										|"Follow me and I will make you fishers of men" (Matthew 4:19)
-								.card__price-layer
-									span.card__price
-										|$399
-					.card
-						a.card__inner(href="#")
-							.card__image-layer
-								img(src="img/cart2.png" alt="Card Product").card__image
-							.card-text
-								.card__title-layer
-									h3.card__title
-										|Sea of galilee quilt
-								.card__description-layer
-									p.card__description
-										|"Follow me and I will make you fishers of men" (Matthew 4:19)
-								.card__price-layer
-									span.card__price
-										|$399
-					.card
-						a.card__inner(href="#")
-							.card__image-layer
-								img(src="img/cart3.png" alt="Card Product").card__image
-							.card-text
-								.card__title-layer
-									h3.card__title
-										|Sea of galilee quilt
-								.card__description-layer
-									p.card__description
-										|"Follow me and I will make you fishers of men" (Matthew 4:19)
-								.card__price-layer
-									span.card__price
-										|$399
-				.cards__button-layer
-					a.cards__button.main-btn(href="#")
-						span.btn-overlay
-						span.btn-text
-							|More
+				.cards__desktop
+					.cards__layer
+						//для подгружаемых рядов (класс .cards__row) при клике на кнопку <<More>> добавить класс .fadeIn
+						.cards__row
+							.card
+								a.card__inner(href="#")
+									.card__image-layer
+										img(src="img/cart1.png" alt="Card Product").card__image
+									.card-text
+										.card__title-layer
+											h3.card__title
+												|Sea of galilee quilt
+										.card__description-layer
+											p.card__description
+												|"Follow me and I will make you fishers of men" (Matthew 4:19)
+										.card__price-layer
+											span.card__price
+												|$399
+							.card
+								a.card__inner(href="#")
+									.card__image-layer
+										img(src="img/cart2.png" alt="Card Product").card__image
+									.card-text
+										.card__title-layer
+											h3.card__title
+												|Sea of galilee quilt
+										.card__description-layer
+											p.card__description
+												|"Follow me and I will make you fishers of men" (Matthew 4:19)
+										.card__price-layer
+											span.card__price
+												|$399
+							.card
+								a.card__inner(href="#")
+									.card__image-layer
+										img(src="img/cart3.png" alt="Card Product").card__image
+									.card-text
+										.card__title-layer
+											h3.card__title
+												|Sea of galilee quilt
+										.card__description-layer
+											p.card__description
+												|"Follow me and I will make you fishers of men" (Matthew 4:19)
+										.card__price-layer
+											span.card__price
+												|$399
+						.cards__row
+							.card
+								a.card__inner(href="#")
+									.card__image-layer
+										img(src="img/cart3.png" alt="Card Product").card__image
+									.card-text
+										.card__title-layer
+											h3.card__title
+												|Sea of galilee quilt
+										.card__description-layer
+											p.card__description
+												|"Follow me and I will make you fishers of men" (Matthew 4:19)
+										.card__price-layer
+											span.card__price
+												|$399
+					.cards__button-layer
+						a.cards__button.main-btn(href="#")
+							span.btn-overlay
+							span.btn-text
+								|More
+				.cards__mobile
+					.cards__layer
+						//для подгружаемых рядов (класс .cards__row) при клике на кнопку <<More>> добавить класс .fadeIn
+						.cards__row
+							.card
+								a.card__inner(href="#")
+									.card__image-layer
+										img(src="img/cart1.png" alt="Card Product").card__image
+									.card-text
+										.card__title-layer
+											h3.card__title
+												|Sea of galilee quilt
+										.card__description-layer
+											p.card__description
+												|"Follow me and I will make you fishers of men" (Matthew 4:19)
+										.card__price-layer
+											span.card__price
+												|$399
+							.card
+								a.card__inner(href="#")
+									.card__image-layer
+										img(src="img/cart2.png" alt="Card Product").card__image
+									.card-text
+										.card__title-layer
+											h3.card__title
+												|Sea of galilee quilt
+										.card__description-layer
+											p.card__description
+												|"Follow me and I will make you fishers of men" (Matthew 4:19)
+										.card__price-layer
+											span.card__price
+												|$399
+						.cards__row
+							.card
+								a.card__inner(href="#")
+									.card__image-layer
+										img(src="img/cart3.png" alt="Card Product").card__image
+									.card-text
+										.card__title-layer
+											h3.card__title
+												|Sea of galilee quilt
+										.card__description-layer
+											p.card__description
+												|"Follow me and I will make you fishers of men" (Matthew 4:19)
+										.card__price-layer
+											span.card__price
+												|$399
+					.cards__button-layer
+						a.cards__button.main-btn(href="#")
+							span.btn-overlay
+							span.btn-text
+								|More

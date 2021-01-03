@@ -1,0 +1,154 @@
+
+
+
+@media screen and (max-width: 992px) {
+	.form__group {
+		.form__field {
+			input {
+				// font-size: 8px;
+				padding: 0 20px;
+				padding-right: 12px;
+			}
+		}
+	}
+
+	.f-container__cards {
+		margin: 0 -7px;
+	}
+
+	.card {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+}
+
+
+@media screen and (max-width: 778px) {
+	.center {
+		padding: 0 15px;
+	}
+
+	.cards__desktop {
+		display: none;
+	}
+
+	.cards__mobile {
+		display: block;
+
+		.card {
+			flex-basis: 50%;
+			padding-left: 0;
+			padding-right: 0;
+
+			&:nth-child(odd) {
+				padding-right: 10px;
+				.card__inner {
+					margin-right: auto;
+				}
+			}
+
+			&:nth-child(even) {
+				padding-left: 10px;
+				.card__inner {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+
+
+	.card__inner {
+		max-width: 370px;
+	}
+
+	.form__button {
+		height: 30px;
+		font-size: 8px;
+		letter-spacing: 0.5px
+	}
+
+	.form__group {
+		.form__field {
+			input {
+				font-size: 8px;
+				padding: 0 15px;
+				padding-right: 8px;
+				letter-spacing: 0.5px
+			}
+		}
+	}
+
+	.feedback__text-layer {
+		margin-right: 20px;
+		padding-bottom: 30px;
+		padding-top: 30px; 
+			.triangle {
+				width: 34px;
+				height: 34px;
+				bottom: -34px;
+				right: 25px;
+
+				&:before {
+					width: 68px;
+					height: 68px;
+				}
+			}
+		}
+
+}
+
+
+@media screen and (max-width: 576px) {
+	.f-container__about {
+		flex-wrap: wrap
+	}
+
+	.about__article {
+		width: 100%;
+		flex-basis: 100%;
+	}
+
+	.about__article-left {
+		padding-right: 0;
+	}
+
+	.about__article-left{
+		display: flex;
+		padding-left: 0;
+		flex-direction: column-reverse;
+	}
+
+	.about__button {
+		margin: 0 auto;
+	}
+
+	.cards__mobile {
+		.cards__row {
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-start;
+			height: auto;
+		}
+		.card {
+			flex-basis: unset;
+			padding-left: 0;
+			padding-right: 0;
+			height: auto;
+
+			&:nth-child(odd) {
+				padding-right: 0px;
+				.card__inner {
+					margin-right: 0;
+				}
+			}
+
+			&:nth-child(even) {
+				padding-left: 0px;
+				.card__inner {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+}

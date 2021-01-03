@@ -1,6 +1,7 @@
 .form__layout  {
 	background: @font-color;
 	position: relative;
+	padding-bottom: 12px;
 }
 
 .form__inner {
@@ -15,15 +16,15 @@
 	}
 	.h2-title {
 		color: @white;
-		letter-spacing: 2px;
+		letter-spacing: 2.5px;
 	}
 }
 
 .form__h2-title {
-	.fSize(87vw, 87px * (768/1200), 87px, 768px, 1200px);
+	.fSize(87vw, 87px * (576/1200), 87px, 576px, 1200px);
 	display: flex;
 	justify-content: space-between;
-
+	line-height: 1.25;
 	& > span {
 		padding-top: 30/540 * 100%;
 		display: block;
@@ -76,4 +77,8 @@
 
 .form__fields {
 	flex-basis: 660/1200 * 100%;
+}
+
+.h2-title__layer-form {
+	padding-bottom: 0;
 }
