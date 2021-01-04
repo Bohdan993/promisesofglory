@@ -23,7 +23,7 @@
 
 .footer__list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 }
 
@@ -45,9 +45,13 @@
 			width: 28/46 * 100%;
 		}
 	}
+
+	&:not(:last-child) {
+		padding-right: 35px;
+	}
 }
 
 .footer__policy-layer {
-	flex-basis: 445/1200 * 100%;
-	padding-right: 75px;
+	flex-basis: 650/1200 * 100%;
+	padding-right: 75/1200 * 100%;
 }

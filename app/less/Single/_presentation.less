@@ -2,34 +2,42 @@
 	width: 100%;
 }
 
+.presentation__layout {
+	.fPa(60%, 60%, 60px, 60px, 992px,  1366px);
+}
+
 .presentation__article {
 	display: flex;
 
 }
 
 .presentation__sliders-group {
-	flex-basis: 50%;
-	width: 50%;
+	// flex-basis: 50%;
+	// width: 50%;
+		width: 100%;
 }
 
-.presentation__text-group {
-	flex-basis: 50%;
-	width: 50%;
-}
+// .presentation__text-group {
+// 	flex-basis: 50%;
+// 	width: 50%;
+// }
 
 .presentation__sliders-group {
+	#presentation__thumbnails-image-slider-track {
+		width: 100%;
+	}
+	.presentation__thumbnails-image-group {
+		width: 100%;
+	}
 	#presentation__thumbnails-image-slider {
-		.presentation__thumbnails-image-group {
-			width: 100%;
-			// transform: translateX(0) !important;
-		}
+		width: 50%;
 		.presentation__thumbnails-image-layer {
 			width: 100%;
 			height: 100%;
-			max-width: 146px;
+			max-width: 24.625%;
 			max-height: 146px;
 			position: relative;
-			margin: 3px;
+			margin: 0.5%;
 			border: 0;
 			cursor: pointer;
 
@@ -63,3 +71,79 @@
 	}
 }
 
+.presentation__image-layer {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	// align-items: flex-start;
+}
+
+.presentation__image-wrapper, .presentation-text {
+	flex-basis: 50%;
+	width: 50%;
+}
+
+.presentation__image-wrapper {
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 490/600 * 100%;
+		width: 50%;
+	}
+}
+
+.presentation-text {
+	padding-left: 50/1200 * 100%;
+	padding-right: 120/1200 * 100%;
+}
+
+.presentation__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover
+}
+
+.presentation__title-layer {
+	padding-bottom: 17px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 40px;
+		height: 1px;
+		background: @font-color;
+	}
+}
+
+.presentation__title {
+	.fSize(36vw, 36px * (768/1200), 36px, 768px, 1200px);
+	font-weight: 700;
+}
+
+.presentation__price-layer {
+	padding-top: 19px;
+	padding-bottom: 19px;
+}
+
+.presentation__price {
+	.fSize(24vw, 24px * (768/1200), 24px, 768px, 1200px);
+	font-weight: 700;
+}
+
+.presentation__description-layer {
+	padding-bottom: 8px;
+}
+
+.presentation__description {
+	.fSize(16vw, 16px * (768/1200), 16px, 768px, 1200px);
+	font-weight: 500;
+	font-style: italic;
+	margin-bottom: 30px;
+	line-height: 24/16;
+}

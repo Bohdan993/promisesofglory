@@ -17,6 +17,7 @@ body {
  
 }
 
+
 ::selection {
   background: rgba(@secondary);
   color: @white;
@@ -171,6 +172,7 @@ main {
   .btn-text {
     position: relative;
     z-index: 3;
+    letter-spacing: 1px;
   }
 
   &:hover {
@@ -205,7 +207,7 @@ main {
 }
 
 .h2-title {
-  .fSize(60vw, 60px * (768/1200), 60px, 768px, 1200px);
+  .fSize(60vw, 60px * (576/1200), 60px, 576px, 1200px);
   font-weight: 700;
   font-family: 'Dancing Script', cursive;
   text-align: center;
@@ -214,7 +216,7 @@ main {
 }
 
 .section__layout {
-  .fPa(40%, 40%, 40px, 40px, 992px,  1200px);
+  .fPa(40%, 40%, 40px, 40px, 992px,  1366px);
 }
 
 .floating-image-layer {
@@ -265,7 +267,7 @@ main {
 //////////////////////////
 @import url("app/less/_menu.less");
 @import url("app/less/_header.less");
-@import url("app/less/_carts.less");
+@import url("app/less/_cards.less");
 @import url("app/less/_about.less");
 @import url("app/less/_video.less");
 @import url("app/less/_posts.less");
@@ -274,7 +276,7 @@ main {
 @import url("app/less/_address.less");
 @import url("app/less/_footer.less");
 
-
+@import url("app/less/Single/_header.less");
 @import url("app/less/Single/_presentation.less");
 
 

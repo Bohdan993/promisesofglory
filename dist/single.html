@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/libs.min.css?v=1609626280623">
-    <link rel="stylesheet" href="css/main.min.css?v=1609626280623">
+    <link rel="stylesheet" href="css/libs.min.css?v=1609704729722">
+    <link rel="stylesheet" href="css/main.min.css?v=1609704729722">
   </head>
   <body>
     <header class="header">
@@ -14,14 +14,27 @@
           <div class="center">
             <div class="f-container">
               <nav class="menu__navigation">
-                <ul class="menu__list">
-                  <li class="menu__list-item"><a class="menu__link" href="#">ABOUT</a></li>
-                  <li class="menu__list-item"><a class="menu__link" href="#">SHOP</a></li>
-                  <li class="menu__list-item"><a class="menu__link" href="#">BLOG</a></li>
-                  <li class="menu__list-item"><a class="menu__link" href="#">CONTACT US</a></li>
-                </ul>
+                <div class="menu__btn">
+                  <div class="menu__btn-burger"></div>
+                </div>
+                <div class="menu__list-wrapper">
+                  <ul class="menu__list">
+                    <li class="menu__list-item"><a class="menu__link" href="#">ABOUT</a></li>
+                    <li class="menu__list-item"><a class="menu__link" href="#">SHOP</a></li>
+                    <li class="menu__list-item"><a class="menu__link" href="#">BLOG</a></li>
+                    <li class="menu__list-item"><a class="menu__link" href="#">CONTACT US</a></li>
+                  </ul>
+                  <div class="menu__close"></div>
+                </div>
+                <div class="menu__overlay"></div>
               </nav>
-              <div class="menu__logo"><img class="logo" src="" alt="Logo"></div>
+              <div class="menu__logo"><a class="menu__logo-link" href="#"><i class="logo ico">
+                    <svg>
+                      <use xlink:href="img/sprites/svg/symbol/sprite.svg#logo-big"></use>
+                    </svg></i><i class="logo-fixed">
+                    <svg>
+                      <use xlink:href="img/sprites/svg/symbol/sprite.svg#logo-little"></use>
+                    </svg></i></a></div>
               <div class="menu__icons"><a class="shopping-bag-link" href="#"><span class="menu__ico"><i class="ico s-shopping-bag"></i></span><span class="menu__price">$300.00</span></a>
                 <div class="social-icons"><a class="facebook-link social-link" href="https://facebook.com" target="_blank" rel="noopener noreffer nofollow"><span class="menu__ico"><i class="ico s-facebook"></i></span></a><a class="instagram-link social-link" href="https://instagram.com" target="_blank" rel="noopener noreffer nofollow"><span class="menu__ico"><i class="ico s-instagram"></i></span></a></div>
               </div>
@@ -29,11 +42,13 @@
           </div>
         </div>
       </div>
-      <div class="header__layout"></div>
+      <div class="header__layout header-single__layout">
+        <div class="header-single__image-layer"><img class="header-single__image" src="img/single-header-bg.png" alt="Background"></div>
+      </div>
     </header>
     <main class="main">
       <div class="presentation">
-        <div class="presentation__layout">
+        <div class="presentation__layout section__layout">
           <div class="center center__presentation">
             <div class="f-container">
               <section class="presentation__section">
@@ -42,10 +57,98 @@
                     <div class="splide presentation__image-slider">
                       <div class="splide__track">
                         <div class="presentation__image-group splide__list">
-                          <div class="presentation__image-layer splide__slide"><img class="presentation__image" src="img/article1.png" alt="Picture"></div>
-                          <div class="presentation__image-layer splide__slide"><img class="presentation__image" src="img/article2.png" alt="Picture"></div>
-                          <div class="presentation__image-layer splide__slide"><img class="presentation__image" src="img/article3.png" alt="Picture"></div>
-                          <div class="presentation__image-layer splide__slide"><img class="presentation__image" src="img/article4.png" alt="Picture"></div>
+                          <div class="presentation__image-layer splide__slide">
+                            <div class="presentation__image-wrapper"><img class="presentation__image" src="img/article1.png" alt="Picture"></div>
+                            <div class="presentation-text">
+                              <div class="presentation__title-layer">
+                                <h3 class="presentation__title">Ein Gedi 1</h3>
+                              </div>
+                              <div class="presentation__price-layer"><span class="presentation__price">$399</span></div>
+                              <div class="presentation__description-layer">
+                                <p class="presentation__description">
+                                  The desert oasis nestled in the Judaen Wilderness. 
+                                  Site of some significant Old Testament events and
+                                  New Testament parables.
+                                  "If anyone is thirsty, let him come to Me and drink"
+                                  (John 7:37)
+                                </p>
+                                <p class="presentation__description">
+                                  "If anyone is thirsty, let him come to Me and drink"
+                                  (John 7:37)
+                                </p>
+                              </div>
+                              <div class="presentation__button-layer"><a class="presentation__button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">Add to cart</span></a></div>
+                            </div>
+                          </div>
+                          <div class="presentation__image-layer splide__slide">
+                            <div class="presentation__image-wrapper"><img class="presentation__image" src="img/article2.png" alt="Picture"></div>
+                            <div class="presentation-text">
+                              <div class="presentation__title-layer">
+                                <h3 class="presentation__title">Ein Gedi 2</h3>
+                              </div>
+                              <div class="presentation__price-layer"><span class="presentation__price">$399</span></div>
+                              <div class="presentation__description-layer">
+                                <p class="presentation__description">
+                                  The desert oasis nestled in the Judaen Wilderness. 
+                                  Site of some significant Old Testament events and
+                                  New Testament parables.
+                                  "If anyone is thirsty, let him come to Me and drink"
+                                  (John 7:37)
+                                </p>
+                                <p class="presentation__description">
+                                  "If anyone is thirsty, let him come to Me and drink"
+                                  (John 7:37)
+                                </p>
+                              </div>
+                              <div class="presentation__button-layer"><a class="presentation__button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">Add to cart</span></a></div>
+                            </div>
+                          </div>
+                          <div class="presentation__image-layer splide__slide">
+                            <div class="presentation__image-wrapper"><img class="presentation__image" src="img/article3.png" alt="Picture"></div>
+                            <div class="presentation-text">
+                              <div class="presentation__title-layer">
+                                <h3 class="presentation__title">Ein Gedi 3</h3>
+                              </div>
+                              <div class="presentation__price-layer"><span class="presentation__price">$399</span></div>
+                              <div class="presentation__description-layer">
+                                <p class="presentation__description">
+                                  The desert oasis nestled in the Judaen Wilderness. 
+                                  Site of some significant Old Testament events and
+                                  New Testament parables.
+                                  "If anyone is thirsty, let him come to Me and drink"
+                                  (John 7:37)
+                                </p>
+                                <p class="presentation__description">
+                                  "If anyone is thirsty, let him come to Me and drink"
+                                  (John 7:37)
+                                </p>
+                              </div>
+                              <div class="presentation__button-layer"><a class="presentation__button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">Add to cart</span></a></div>
+                            </div>
+                          </div>
+                          <div class="presentation__image-layer splide__slide">
+                            <div class="presentation__image-wrapper"><img class="presentation__image" src="img/article4.png" alt="Picture"></div>
+                            <div class="presentation-text">
+                              <div class="presentation__title-layer">
+                                <h3 class="presentation__title">Ein Gedi 4</h3>
+                              </div>
+                              <div class="presentation__price-layer"><span class="presentation__price">$399</span></div>
+                              <div class="presentation__description-layer">
+                                <p class="presentation__description">
+                                  The desert oasis nestled in the Judaen Wilderness. 
+                                  Site of some significant Old Testament events and
+                                  New Testament parables.
+                                  "If anyone is thirsty, let him come to Me and drink"
+                                  (John 7:37)
+                                </p>
+                                <p class="presentation__description">
+                                  "If anyone is thirsty, let him come to Me and drink"
+                                  (John 7:37)
+                                </p>
+                              </div>
+                              <div class="presentation__button-layer"><a class="presentation__button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">Add to cart</span></a></div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -59,23 +162,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="presentation__text-group">
-                    <div class="h2-title__layer">
-                      <h2 class="h2-title">100% Handmade</h2>
-                    </div>
-                    <div class="presentation-text__layer">
-                      <p class="presentation__text">
-                        The physical setting of so many biblical events. Where God placed
-                        	his people. Where he chose to communicate to this world through his prophets. Where our Patriarchs and Matriarchs traveled with their Flocks. Events that changed history and mankind captured in these quilts. 
-                        	The biblical reference joining that image and elevating art into
-                        	meaning for you, your family and anyone who enters your home.
-                        	Opening your door to the biblical story and welcoming it into your
-                        	every day lives. Bringing the Holy Land into your house and your
-                        	house into the Holy Land’s narrative.
-                      </p>
-                    </div>
-                    <div class="presentation__button-layer"><a class="presentation__button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">Visit Blog</span></a></div>
                   </div>
                 </article>
               </section>
@@ -342,18 +428,20 @@
               <p class="footer__name">© <span>2020 </span>Promises of Glory </p>
             </div>
             <div class="footer__policy-layer">
-              <ul class="footer__list">
-                <li class="footer__list-item"><a class="footer__link" href="#">Terms Of Use</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="#">Privacy Policy</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="#">Contatc Us</a></li>
-              </ul>
+              <div class="footer__list-wrapper">
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__link" href="#">Terms Of Use</a></li>
+                  <li class="footer__list-item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                  <li class="footer__list-item"><a class="footer__link" href="#">Contatc Us</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
     <div class="popups"></div>
-    <script src="js/libs.min.js?v=1609626280623" defer></script>
-    <script src="js/script.min.js?v=1609626280623" async></script>
+    <script src="js/libs.min.js?v=1609704729723" defer></script>
+    <script src="js/script.min.js?v=1609704729723" async></script>
   </body>
 </html>

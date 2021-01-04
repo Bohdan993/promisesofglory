@@ -51,26 +51,27 @@ if(sliders.presentationImageSlider) {
 			rewind      : true,
 			isNavigation: true,
 			arrows: false,
+			autoWidth: true,
 			// focus       : 'center',
 			trimSpace: true,
 			pagination  : false,
 			cover       : true,
 			breakpoints : {
-				'768': {
-					fixedWidth  : 100,
-					fixedHeight : 100,
-				}
+				// '768': {
+				// 	fixedWidth  : 100,
+				// 	fixedHeight : 100,
+				// }
 			}
 		} ).mount();
 
 		// Create the main slider.
 		let primarySlider = new Splide( sliders.presentationImageSlider, {
 			type       : 'fade',
-			heightRatio: 0.5,
 			pagination : false,
 			arrows     : false,
-			cover      : true,
-		} );
+			pauseOnHover: false,
+			drag: false
+		});
 
 		// Set the thumbnails slider as a sync target and then call mount.
 		primarySlider.sync( secondarySlider ).mount();

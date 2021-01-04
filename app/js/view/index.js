@@ -1,6 +1,9 @@
 
 
 const menu = document.querySelector('.menu__layout')
+const menuBtn = document.querySelector('.menu__btn')
+const menuList = document.querySelector('.menu__list-wrapper')
+const menuCloseBtn = document.querySelector('.menu__close')
 const header = document.querySelector('.header__layout')
 const headerSlider = document.querySelector('.header__slider')
 const aboutSliders = document.querySelectorAll('.about__image-slider')
@@ -12,7 +15,10 @@ const presentationImageSlider = document.querySelector('.presentation__image-sli
 const presentationThumbnailsImageSlider = document.querySelector('.presentation__thumbnails-image-slider')
 
 export {
-	menu, 
+	menu,
+	menuBtn,
+	menuCloseBtn,
+	menuList,
 	header,
 	headerSlider,
 	aboutSliders,

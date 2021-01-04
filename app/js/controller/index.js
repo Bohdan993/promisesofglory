@@ -1,11 +1,15 @@
 import {
 	InitSlider,
 	FixedMenu,
-	PlayVideo
+	PlayVideo,
+	BurgerMenu
 } from '../model'
 import {
 	header,
 	menu,
+	menuBtn,
+	menuCloseBtn,
+	menuList,
 	headerSlider,
 	aboutSliders,
 	feedbackSlider,
@@ -21,6 +25,7 @@ const app = {
 		this.is()
 		this.fm()
 		this.pv()
+		this.bm()
 	},
 	is(){
 		InitSlider({
@@ -36,6 +41,9 @@ const app = {
 	},
 	pv() {
 		PlayVideo(playBtn, videoParent, videoLayer)
+	},
+	bm(){
+		BurgerMenu(menuBtn, menuCloseBtn, menuList)
 	}
 
 }

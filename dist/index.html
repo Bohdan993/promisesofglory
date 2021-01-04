@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/libs.min.css?v=1609626280326">
-    <link rel="stylesheet" href="css/main.min.css?v=1609626280326">
+    <link rel="stylesheet" href="css/libs.min.css?v=1609704729393">
+    <link rel="stylesheet" href="css/main.min.css?v=1609704729393">
   </head>
   <body>
     <header class="header">
@@ -14,14 +14,27 @@
           <div class="center">
             <div class="f-container">
               <nav class="menu__navigation">
-                <ul class="menu__list">
-                  <li class="menu__list-item"><a class="menu__link" href="#">ABOUT</a></li>
-                  <li class="menu__list-item"><a class="menu__link" href="#">SHOP</a></li>
-                  <li class="menu__list-item"><a class="menu__link" href="#">BLOG</a></li>
-                  <li class="menu__list-item"><a class="menu__link" href="#">CONTACT US</a></li>
-                </ul>
+                <div class="menu__btn">
+                  <div class="menu__btn-burger"></div>
+                </div>
+                <div class="menu__list-wrapper">
+                  <ul class="menu__list">
+                    <li class="menu__list-item"><a class="menu__link" href="#">ABOUT</a></li>
+                    <li class="menu__list-item"><a class="menu__link" href="#">SHOP</a></li>
+                    <li class="menu__list-item"><a class="menu__link" href="#">BLOG</a></li>
+                    <li class="menu__list-item"><a class="menu__link" href="#">CONTACT US</a></li>
+                  </ul>
+                  <div class="menu__close"></div>
+                </div>
+                <div class="menu__overlay"></div>
               </nav>
-              <div class="menu__logo"><img class="logo" src="" alt="Logo"></div>
+              <div class="menu__logo"><a class="menu__logo-link" href="#"><i class="logo ico">
+                    <svg>
+                      <use xlink:href="img/sprites/svg/symbol/sprite.svg#logo-big"></use>
+                    </svg></i><i class="logo-fixed">
+                    <svg>
+                      <use xlink:href="img/sprites/svg/symbol/sprite.svg#logo-little"></use>
+                    </svg></i></a></div>
               <div class="menu__icons"><a class="shopping-bag-link" href="#"><span class="menu__ico"><i class="ico s-shopping-bag"></i></span><span class="menu__price">$300.00</span></a>
                 <div class="social-icons"><a class="facebook-link social-link" href="https://facebook.com" target="_blank" rel="noopener noreffer nofollow"><span class="menu__ico"><i class="ico s-facebook"></i></span></a><a class="instagram-link social-link" href="https://instagram.com" target="_blank" rel="noopener noreffer nofollow"><span class="menu__ico"><i class="ico s-instagram"></i></span></a></div>
               </div>
@@ -463,18 +476,20 @@
               <p class="footer__name">© <span>2020 </span>Promises of Glory </p>
             </div>
             <div class="footer__policy-layer">
-              <ul class="footer__list">
-                <li class="footer__list-item"><a class="footer__link" href="#">Terms Of Use</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="#">Privacy Policy</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="#">Contatc Us</a></li>
-              </ul>
+              <div class="footer__list-wrapper">
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__link" href="#">Terms Of Use</a></li>
+                  <li class="footer__list-item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                  <li class="footer__list-item"><a class="footer__link" href="#">Contatc Us</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
     <div class="popups"></div>
-    <script src="js/libs.min.js?v=1609626280326" defer></script>
-    <script src="js/script.min.js?v=1609626280326" async></script>
+    <script src="js/libs.min.js?v=1609704729393" defer></script>
+    <script src="js/script.min.js?v=1609704729393" async></script>
   </body>
 </html>
