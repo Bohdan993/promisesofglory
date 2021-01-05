@@ -17,9 +17,17 @@ const BurgerMenu = (menuBtn, closeBtn, menu) => {
 		}
 	}
 
+	function resizeFunc(){
+		if(this.innerWidth > 768 && menuOpen) {
+			closeMenu()
+		}
+	}
+
 
 	menuBtn.addEventListener('click', openMenu)
 	closeBtn.addEventListener('click', closeMenu)
+	resizeFunc = throttle(resizeFunc, 150)
+	window.addEventListener('resize', resizeFunc)
 }
 
 
