@@ -1,0 +1,40 @@
+extends pug/base
+
+
+
+append vars
+
+
+prepend vars
+
+
+
+
+
+block links
+
+
+
+block head-end
+
+
+
+
+
+
+
+block content
+	include pug/layouts/ContactUs/header
+	main.main
+		include pug/layouts/ContactUs/form
+		include pug/layouts/cards
+		include pug/layouts/about
+		include pug/layouts/video
+		include pug/layouts/posts
+		include pug/layouts/feedback
+		include pug/layouts/form
+		include pug/layouts/address
+	include pug/layouts/footer
+	include pug/layouts/_popup
+
+

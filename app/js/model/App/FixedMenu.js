@@ -4,9 +4,10 @@ const FixedMenu = (menu, header) => {
 	// console.log(menu)
 	// @argument menu - 
 	// @argument header - 
+	//dd
 	function fixed(e){
 		// console.log(this.scrollY)
-		if(this.scrollY > 1) {
+		if(window.scrollY > 1) {
 			menu.classList.add('fixed')
 			header.classList.add('full')
 		} else {
@@ -18,6 +19,7 @@ const FixedMenu = (menu, header) => {
 	fixed = throttle(fixed, 100)
 
 	window.addEventListener('scroll', fixed)
+	fixed()
 }
 
 

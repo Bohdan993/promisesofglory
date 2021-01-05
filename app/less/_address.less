@@ -32,7 +32,7 @@
 	height: 100%;
 	width: 940/1366 * 100%;
 	// max-width: 940px;
-	max-width: 940px
+	// max-width: 940px
 	// flex-grow: 1;
 }
 
@@ -42,6 +42,7 @@
 
 .address__bg-layer {
 	position: absolute;
+	z-index: -1;
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -49,7 +50,10 @@
 	object-fit: contain;
 	// width: (1366 - 940)/1366 * 100%;
 	// flex-grow: 1;
-
+	picture {
+		height: 100%;
+	}
+	
 	&:before {
 		content: '';
 		position: absolute;
@@ -69,11 +73,23 @@
 
 
 .address__info-layer {
-	width: auto;
+		padding: 0 30px;
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: (1366 - 940)/1366 * 100%;
+		// max-width: 940px;
+		// max-width: 940px
+		// flex-grow: 1;
 }
 
 .address__street {
-	.fSize(30vw, 30px * (768/1200), 30px, 768px, 1200px);
+	.fSize(30vw, 30px * (576/1200), 30px, 576px, 1200px);
 	font-weight: 900;
 	color: @secondary;
 	text-align: center;
@@ -82,7 +98,7 @@
 }
 
 .address__mail {
-	.fSize(18vw, 18px * (992/1200), 18px, 992px, 1200px);
+	.fSize(18vw, 18px * (768/1200), 18px, 768px, 1200px);
 	font-weight: 900;
 	transition: color .25s linear;
 
@@ -94,6 +110,7 @@
 
 .address__social-layer {
 	justify-content: center;
+	flex-basis: 100%;
 }
 
 .address__ico {
@@ -115,8 +132,11 @@
 
 .address__street-layer {
 	padding-bottom: 25px;
+	flex-basis: 100%;
 }
 
 .address__mail-layer {
+	text-align: center;
 	padding-bottom: 45px;
+	flex-basis: 100%;
 }

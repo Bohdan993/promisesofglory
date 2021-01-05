@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/libs.min.css?v=1609704729010">
-    <link rel="stylesheet" href="css/main.min.css?v=1609704729010">
+    <link rel="preload" href="css/main.min.css?v=1609795647955" as="style">
+    <link rel="preload" href="fonts/Geometria-ExtaBlack.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/libs.min.css?v=1609795647955">
+    <link rel="stylesheet" href="css/main.min.css?v=1609795647955">
   </head>
   <body>
     <header class="header">
@@ -23,6 +25,9 @@
                     <li class="menu__list-item"><a class="menu__link" href="#">SHOP</a></li>
                     <li class="menu__list-item"><a class="menu__link" href="#">BLOG</a></li>
                     <li class="menu__list-item"><a class="menu__link" href="#">CONTACT US</a></li>
+                    <li class="menu__list-item social-list-item">
+                      <div class="social-icons menu__social-icons"><a class="facebook-link social-link" href="https://facebook.com" target="_blank" rel="noopener noreffer nofollow"><span class="menu__ico"><i class="ico s-facebook"></i></span></a><a class="instagram-link social-link" href="https://instagram.com" target="_blank" rel="noopener noreffer nofollow"><span class="menu__ico"><i class="ico s-instagram"></i></span></a></div>
+                    </li>
                   </ul>
                   <div class="menu__close"></div>
                 </div>
@@ -42,12 +47,24 @@
           </div>
         </div>
       </div>
-      <div class="header__layout"></div>
+      <div class="header__layout header__layout_bg">
+        <div class="header__image-layer_bg">
+          <picture>
+            <source srcset="img/catalog-header-bg.webp" type="image/webp">
+            <source srcset="img/catalog-header-bg.png" type="image/png"><img class="header__image_bg" src="img/catalog-header-bg.png" alt="Background">
+          </picture>
+        </div>
+      </div>
     </header>
     <main class="main">
       <div class="cards">
         <div class="cards__layout section__layout">
-          <div class="floating-image-layer floating-image-layer-1"><img class="floating-image" src="img/olive1.png" alt="Olive tree branch"></div>
+          <div class="floating-image-layer floating-image-layer-1">
+            <picture>
+              <source srcset="img/olive1.webp" type="image/webp">
+              <source srcset="img/olive1.png" type="image/png"><img class="floating-image" src="img/olive1.png" alt="Olive tree branch">
+            </picture>
+          </div>
           <div class="center">
             <div class="f-container">
               <div class="h2-title__layer">
@@ -57,84 +74,151 @@
           </div>
           <div class="center center__cards">
             <div class="f-container f-container__cards">
-              <div class="cards__layer">
-                <!--для подгружаемых карточек (класс .card) при клике на кнопку <<More>> добавить класс .fadeIn-->
-                <div class="card"><a class="card__inner" href="#">
-                    <div class="card__image-layer"><img class="card__image" src="img/cart1.png" alt="Card Product"></div>
-                    <div class="card-text">
-                      <div class="card__title-layer">
-                        <h3 class="card__title">Sea of galilee quilt</h3>
-                      </div>
-                      <div class="card__description-layer">
-                        <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
-                      </div>
-                      <div class="card__price-layer"><span class="card__price">$399</span></div>
-                    </div></a></div>
-                <div class="card"><a class="card__inner" href="#">
-                    <div class="card__image-layer"><img class="card__image" src="img/cart2.png" alt="Card Product"></div>
-                    <div class="card-text">
-                      <div class="card__title-layer">
-                        <h3 class="card__title">Sea of galilee quilt</h3>
-                      </div>
-                      <div class="card__description-layer">
-                        <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
-                      </div>
-                      <div class="card__price-layer"><span class="card__price">$399</span></div>
-                    </div></a></div>
-                <div class="card"><a class="card__inner" href="#">
-                    <div class="card__image-layer"><img class="card__image" src="img/cart3.png" alt="Card Product"></div>
-                    <div class="card-text">
-                      <div class="card__title-layer">
-                        <h3 class="card__title">Sea of galilee quilt</h3>
-                      </div>
-                      <div class="card__description-layer">
-                        <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
-                      </div>
-                      <div class="card__price-layer"><span class="card__price">$399</span></div>
-                    </div></a></div>
-                <div class="card"><a class="card__inner" href="#">
-                    <div class="card__image-layer"><img class="card__image" src="img/cart1.png" alt="Card Product"></div>
-                    <div class="card-text">
-                      <div class="card__title-layer">
-                        <h3 class="card__title">Sea of galilee quilt</h3>
-                      </div>
-                      <div class="card__description-layer">
-                        <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
-                      </div>
-                      <div class="card__price-layer"><span class="card__price">$399</span></div>
-                    </div></a></div>
-                <div class="card"><a class="card__inner" href="#">
-                    <div class="card__image-layer"><img class="card__image" src="img/cart2.png" alt="Card Product"></div>
-                    <div class="card-text">
-                      <div class="card__title-layer">
-                        <h3 class="card__title">Sea of galilee quilt</h3>
-                      </div>
-                      <div class="card__description-layer">
-                        <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
-                      </div>
-                      <div class="card__price-layer"><span class="card__price">$399</span></div>
-                    </div></a></div>
-                <div class="card"><a class="card__inner" href="#">
-                    <div class="card__image-layer"><img class="card__image" src="img/cart3.png" alt="Card Product"></div>
-                    <div class="card-text">
-                      <div class="card__title-layer">
-                        <h3 class="card__title">Sea of galilee quilt</h3>
-                      </div>
-                      <div class="card__description-layer">
-                        <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
-                      </div>
-                      <div class="card__price-layer"><span class="card__price">$399</span></div>
-                    </div></a></div>
+              <div class="cards__desktop">
+                <div class="cards__layer">
+                  <!--для подгружаемых рядов (класс .cards__row) при клике на кнопку <<More>> добавить класс .fadeIn-->
+                  <div class="cards__row">
+                    <div class="card"><a class="card__inner" href="#">
+                        <div class="card__image-layer">
+                          <picture>
+                            <source srcset="img/cart1.webp" type="image/webp">
+                            <source srcset="img/cart1.png" type="image/png"><img class="card__image" src="img/cart1.png" alt="Card Product">
+                          </picture>
+                        </div>
+                        <div class="card-text">
+                          <div class="card__title-layer">
+                            <h3 class="card__title">Sea of galilee quilt</h3>
+                          </div>
+                          <div class="card__description-layer">
+                            <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
+                          </div>
+                          <div class="card__price-layer"><span class="card__price">$399</span></div>
+                        </div></a></div>
+                    <div class="card"><a class="card__inner" href="#">
+                        <div class="card__image-layer">
+                          <picture>
+                            <source srcset="img/cart2.webp" type="image/webp">
+                            <source srcset="img/cart2.png" type="image/png"><img class="card__image" src="img/cart2.png" alt="Card Product">
+                          </picture>
+                        </div>
+                        <div class="card-text">
+                          <div class="card__title-layer">
+                            <h3 class="card__title">Sea of galilee quilt</h3>
+                          </div>
+                          <div class="card__description-layer">
+                            <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
+                          </div>
+                          <div class="card__price-layer"><span class="card__price">$399</span></div>
+                        </div></a></div>
+                    <div class="card"><a class="card__inner" href="#">
+                        <div class="card__image-layer">
+                          <picture>
+                            <source srcset="img/cart3.webp" type="image/webp">
+                            <source srcset="img/cart3.png" type="image/png"><img class="card__image" src="img/cart3.png" alt="Card Product">
+                          </picture>
+                        </div>
+                        <div class="card-text">
+                          <div class="card__title-layer">
+                            <h3 class="card__title">Sea of galilee quilt</h3>
+                          </div>
+                          <div class="card__description-layer">
+                            <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
+                          </div>
+                          <div class="card__price-layer"><span class="card__price">$399</span></div>
+                        </div></a></div>
+                  </div>
+                  <div class="cards__row">
+                    <div class="card"><a class="card__inner" href="#">
+                        <div class="card__image-layer">
+                          <picture>
+                            <source srcset="img/cart3.webp" type="image/webp">
+                            <source srcset="img/cart3.png" type="image/png"><img class="card__image" src="img/cart3.png" alt="Card Product">
+                          </picture>
+                        </div>
+                        <div class="card-text">
+                          <div class="card__title-layer">
+                            <h3 class="card__title">Sea of galilee quilt</h3>
+                          </div>
+                          <div class="card__description-layer">
+                            <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
+                          </div>
+                          <div class="card__price-layer"><span class="card__price">$399</span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="cards__button-layer"><a class="cards__button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">More</span></a></div>
               </div>
-              <div class="cards__button-layer"><a class="cards__button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">More</span></a></div>
+              <div class="cards__mobile">
+                <div class="cards__layer">
+                  <!--для подгружаемых рядов (класс .cards__row) при клике на кнопку <<More>> добавить класс .fadeIn-->
+                  <div class="cards__row">
+                    <div class="card"><a class="card__inner" href="#">
+                        <div class="card__image-layer">
+                          <picture>
+                            <source srcset="img/cart1.webp" type="image/webp">
+                            <source srcset="img/cart1.png" type="image/png"><img class="card__image" src="img/cart1.png" alt="Card Product">
+                          </picture>
+                        </div>
+                        <div class="card-text">
+                          <div class="card__title-layer">
+                            <h3 class="card__title">Sea of galilee quilt</h3>
+                          </div>
+                          <div class="card__description-layer">
+                            <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
+                          </div>
+                          <div class="card__price-layer"><span class="card__price">$399</span></div>
+                        </div></a></div>
+                    <div class="card"><a class="card__inner" href="#">
+                        <div class="card__image-layer">
+                          <picture>
+                            <source srcset="img/cart2.webp" type="image/webp">
+                            <source srcset="img/cart2.png" type="image/png"><img class="card__image" src="img/cart2.png" alt="Card Product">
+                          </picture>
+                        </div>
+                        <div class="card-text">
+                          <div class="card__title-layer">
+                            <h3 class="card__title">Sea of galilee quilt</h3>
+                          </div>
+                          <div class="card__description-layer">
+                            <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
+                          </div>
+                          <div class="card__price-layer"><span class="card__price">$399</span></div>
+                        </div></a></div>
+                  </div>
+                  <div class="cards__row">
+                    <div class="card"><a class="card__inner" href="#">
+                        <div class="card__image-layer">
+                          <picture>
+                            <source srcset="img/cart3.webp" type="image/webp">
+                            <source srcset="img/cart3.png" type="image/png"><img class="card__image" src="img/cart3.png" alt="Card Product">
+                          </picture>
+                        </div>
+                        <div class="card-text">
+                          <div class="card__title-layer">
+                            <h3 class="card__title">Sea of galilee quilt</h3>
+                          </div>
+                          <div class="card__description-layer">
+                            <p class="card__description">"Follow me and I will make you fishers of men" (Matthew 4:19)</p>
+                          </div>
+                          <div class="card__price-layer"><span class="card__price">$399</span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="cards__button-layer"><a class="cards__button main-btn" href="#"><span class="btn-overlay"></span><span class="btn-text">More</span></a></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="about">
         <div class="about__layout section__layout">
-          <div class="floating-image-layer floating-image-layer-2"><img class="floating-image" src="img/olive2.png" alt="Olive tree branch"></div>
-          <div class="center">
+          <div class="floating-image-layer floating-image-layer-2">
+            <picture>
+              <source srcset="img/olive2.webp" type="image/webp">
+              <source srcset="img/olive2.png" type="image/png"><img class="floating-image" src="img/olive2.png" alt="Olive tree branch">
+            </picture>
+          </div>
+          <div class="center center__about">
             <div class="f-container f-container__about">
               <article class="about__article-left about__article">
                 <div class="about__text-group">
@@ -158,10 +242,30 @@
                 <div class="splide about__image-slider">
                   <div class="splide__track">
                     <div class="about__image-group splide__list">
-                      <div class="about__image-layer splide__slide"><img class="about__image" data-splide-lazy="img/about-bg1.png" alt="Picture"></div>
-                      <div class="about__image-layer splide__slide"><img class="about__image" data-splide-lazy="img/about-bg2.png" alt="Picture"></div>
-                      <div class="about__image-layer splide__slide"><img class="about__image" data-splide-lazy="img/about-bg1.png" alt="Picture"></div>
-                      <div class="about__image-layer splide__slide"><img class="about__image" data-splide-lazy="img/about-bg2.png" alt="Picture"></div>
+                      <div class="about__image-layer splide__slide">
+                        <picture>
+                          <source data-splide-lazy-srcset="img/about-bg1.webp" type="image/webp">
+                          <source data-splide-lazy-srcset="img/about-bg1.png" type="image/png"><img class="about__image" data-splide-lazy="img/about-bg1.png" alt="Picture">
+                        </picture>
+                      </div>
+                      <div class="about__image-layer splide__slide">
+                        <picture>
+                          <source data-splide-lazy-srcset="img/about-bg2.webp" type="image/webp">
+                          <source data-splide-lazy-srcset="img/about-bg2.png" type="image/png"><img class="about__image" data-splide-lazy="img/about-bg2.png" alt="Picture">
+                        </picture>
+                      </div>
+                      <div class="about__image-layer splide__slide">
+                        <picture>
+                          <source data-splide-lazy-srcset="img/about-bg1.webp" type="image/webp">
+                          <source data-splide-lazy-srcset="img/about-bg1.png" type="image/png"><img class="about__image" data-splide-lazy="img/about-bg1.png" alt="Picture">
+                        </picture>
+                      </div>
+                      <div class="about__image-layer splide__slide">
+                        <picture>
+                          <source data-splide-lazy-srcset="img/about-bg2.webp" type="image/webp">
+                          <source data-splide-lazy-srcset="img/about-bg2.png" type="image/png"><img class="about__image" data-splide-lazy="img/about-bg2.png" alt="Picture">
+                        </picture>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -170,10 +274,30 @@
                 <div class="splide about__image-slider">
                   <div class="splide__track">
                     <div class="about__image-group splide__list">
-                      <div class="about__image-layer splide__slide"><img class="about__image" data-splide-lazy="img/about-bg2.png" alt="Picture"></div>
-                      <div class="about__image-layer splide__slide"><img class="about__image" data-splide-lazy="img/about-bg1.png" alt="Picture"></div>
-                      <div class="about__image-layer splide__slide"><img class="about__image" data-splide-lazy="img/about-bg2.png" alt="Picture"></div>
-                      <div class="about__image-layer splide__slide"><img class="about__image" data-splide-lazy="img/about-bg1.png" alt="Picture"></div>
+                      <div class="about__image-layer splide__slide">
+                        <picture>
+                          <source data-splide-lazy-srcset="img/about-bg2.webp" type="image/webp">
+                          <source data-splide-lazy-srcset="img/about-bg2.png" type="image/png"><img class="about__image" data-splide-lazy="img/about-bg2.png" alt="Picture">
+                        </picture>
+                      </div>
+                      <div class="about__image-layer splide__slide">
+                        <picture>
+                          <source data-splide-lazy-srcset="img/about-bg1.webp" type="image/webp">
+                          <source data-splide-lazy-srcset="img/about-bg1.png" type="image/png"><img class="about__image" data-splide-lazy="img/about-bg1.png" alt="Picture">
+                        </picture>
+                      </div>
+                      <div class="about__image-layer splide__slide">
+                        <picture>
+                          <source data-splide-lazy-srcset="img/about-bg2.webp" type="image/webp">
+                          <source data-splide-lazy-srcset="img/about-bg2.png" type="image/png"><img class="about__image" data-splide-lazy="img/about-bg2.png" alt="Picture">
+                        </picture>
+                      </div>
+                      <div class="about__image-layer splide__slide">
+                        <picture>
+                          <source data-splide-lazy-srcset="img/about-bg1.webp" type="image/webp">
+                          <source data-splide-lazy-srcset="img/about-bg1.png" type="image/png"><img class="about__image" data-splide-lazy="img/about-bg1.png" alt="Picture">
+                        </picture>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -201,14 +325,24 @@
       </div>
       <div class="video">
         <div class="video__layout">
-          <div class="video__background" data-youtube="1UUYjd2rjsE"><img class="video__background-image" src="img/video-bg.png" alt="Background"></div>
+          <div class="video__background" data-youtube="1UUYjd2rjsE">
+            <picture>
+              <source srcset="img/video-bg.webp" type="image/webp">
+              <source srcset="img/video-bg.png" type="image/png"><img class="video__background-image" src="img/video-bg.png" alt="Background">
+            </picture>
+          </div>
           <div class="center center__video">
             <div class="f-container">
               <div class="video__layer">
                 <div class="video__text-layer">
                   <p class="video__text"><span>Promises Of Glory </span>- Process video</p>
                 </div>
-                <div class="video__play-button-layer"><img class="video__play-button" src="img/play-btn.png" alt="Play Button"></div>
+                <div class="video__play-button-layer">
+                  <picture>
+                    <source srcset="img/play-btn.webp" type="image/webp">
+                    <source srcset="img/play-btn.png" type="image/png"><img class="video__play-button" src="img/play-btn.png" alt="Play Button">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -219,22 +353,42 @@
           <div class="f-container">
             <div class="posts__layer">
               <div class="post"><a class="post__inner" href="#">
-                  <div class="post__img-layer"><img class="post__img" src="img/article1.png" alr="Article"></div>
+                  <div class="post__img-layer">
+                    <picture>
+                      <source srcset="img/article1.webp" type="image/webp">
+                      <source srcset="img/article1.png" type="image/png"><img class="post__img" src="img/article1.png" alr="Article">
+                    </picture>
+                  </div>
                   <div class="h2-title__layer h2-title__layer-posts">
                     <h2 class="h2-title">Our Story</h2>
                   </div></a></div>
               <div class="post"><a class="post__inner" href="#">
-                  <div class="post__img-layer"><img class="post__img" src="img/article2.png" alr="Article"></div>
+                  <div class="post__img-layer">
+                    <picture>
+                      <source srcset="img/article2.webp" type="image/webp">
+                      <source srcset="img/article2.png" type="image/png"><img class="post__img" src="img/article2.png" alr="Article">
+                    </picture>
+                  </div>
                   <div class="h2-title__layer h2-title__layer-posts">
                     <h2 class="h2-title">Our Process</h2>
                   </div></a></div>
               <div class="post"><a class="post__inner" href="#">
-                  <div class="post__img-layer"><img class="post__img" src="img/article3.png" alr="Article"></div>
+                  <div class="post__img-layer">
+                    <picture>
+                      <source srcset="img/article3.webp" type="image/webp">
+                      <source srcset="img/article3.png" type="image/png"><img class="post__img" src="img/article3.png" alr="Article">
+                    </picture>
+                  </div>
                   <div class="h2-title__layer h2-title__layer-posts">
                     <h2 class="h2-title">Bringing Glory Home</h2>
                   </div></a></div>
               <div class="post"><a class="post__inner" href="#">
-                  <div class="post__img-layer"><img class="post__img" src="img/article4.png" alr="Article"></div>
+                  <div class="post__img-layer">
+                    <picture>
+                      <source srcset="img/article4.webp" type="image/webp">
+                      <source srcset="img/article4.png" type="image/png"><img class="post__img" src="img/article4.png" alr="Article">
+                    </picture>
+                  </div>
                   <div class="h2-title__layer h2-title__layer-posts">
                     <h2 class="h2-title">Our gallery</h2>
                   </div></a></div>
@@ -244,10 +398,15 @@
       </div>
       <div class="feedback">
         <div class="feedback__layout section__layout">
-          <div class="floating-image-layer floating-image-layer-3"><img class="floating-image" src="img/olive3.png" alt="Olive tree branch"></div>
+          <div class="floating-image-layer floating-image-layer-3">
+            <picture>
+              <source srcset="img/olive3.webp" type="image/webp">
+              <source srcset="img/olive3.png" type="image/png"><img class="floating-image" src="img/olive3.png" alt="Olive tree branch">
+            </picture>
+          </div>
           <div class="center">
             <div class="f-container">
-              <div class="h2-title__layer">
+              <div class="h2-title__layer h2-title__layer-feedback">
                 <h2 class="h2-title">Customer Review</h2>
               </div>
             </div>
@@ -268,7 +427,11 @@
                               faith in the Bible. Both the Bible and the Land have been preserved as physical evidences that "He endureth forever."
                             </p>
                           </div>
-                          <figure class="feedback__image-layer"><img class="feedback__image" data-splide-lazy="img/feedback.png" alt="A man">
+                          <figure class="feedback__image-layer">
+                            <picture>
+                              <source data-splide-lazy-srcset="img/feedback.webp" type="image/webp">
+                              <source data-splide-lazy-srcset="img/feedback.png" type="image/png"><img class="feedback__image" data-splide-lazy="img/feedback.png" alt="A man">
+                            </picture>
                             <figcaption class="feedback__image-name">Billy Graham</figcaption>
                           </figure>
                         </div>
@@ -281,7 +444,11 @@
                               faith in the Bible. Both the Bible and the Land have been preserved as physical evidences that "He endureth forever."
                             </p>
                           </div>
-                          <figure class="feedback__image-layer"><img class="feedback__image" data-splide-lazy="img/feedback.png" alt="A man">
+                          <figure class="feedback__image-layer">
+                            <picture>
+                              <source data-splide-lazy-srcset="img/feedback.webp" type="image/webp">
+                              <source data-splide-lazy-srcset="img/feedback.png" type="image/png"><img class="feedback__image" data-splide-lazy="img/feedback.png" alt="A man">
+                            </picture>
                             <figcaption class="feedback__image-name">Billy Graham</figcaption>
                           </figure>
                         </div>
@@ -303,7 +470,11 @@
                               faith in the Bible. Both the Bible and the Land have been preserved as physical evidences that "He endureth forever."
                             </p>
                           </div>
-                          <figure class="feedback__image-layer"><img class="feedback__image" data-splide-lazy="img/feedback.png" alt="A man">
+                          <figure class="feedback__image-layer">
+                            <picture>
+                              <source data-splide-lazy-srcset="img/feedback.webp" type="image/webp">
+                              <source data-splide-lazy-srcset="img/feedback.png" type="image/png"><img class="feedback__image" data-splide-lazy="img/feedback.png" alt="A man">
+                            </picture>
                             <figcaption class="feedback__image-name">Billy Graham</figcaption>
                           </figure>
                         </div>
@@ -316,7 +487,11 @@
                               faith in the Bible. Both the Bible and the Land have been preserved as physical evidences that "He endureth forever."
                             </p>
                           </div>
-                          <figure class="feedback__image-layer"><img class="feedback__image" data-splide-lazy="img/feedback.png" alt="A man">
+                          <figure class="feedback__image-layer">
+                            <picture>
+                              <source data-splide-lazy-srcset="img/feedback.webp" type="image/webp">
+                              <source data-splide-lazy-srcset="img/feedback.png" type="image/png"><img class="feedback__image" data-splide-lazy="img/feedback.png" alt="A man">
+                            </picture>
                             <figcaption class="feedback__image-name">Billy Graham</figcaption>
                           </figure>
                         </div>
@@ -361,18 +536,19 @@
       </div>
       <div class="address">
         <div class="address__layout">
-          <div class="address__bg-layer"><img class="address__bg" src="img/contacts.png" alt="Background"></div>
-          <div class="center center__address">
-            <div class="f-container f-container__address">
-              <div class="address__info-layer">
-                <div class="address__street-layer">
-                  <p class="address__street">Mevaseret Zion</p>
-                  <p class="address__street">ISRAEL 90805</p>
-                </div>
-                <div class="address__mail-layer"><a class="address__mail" href="mailto:info@promisesofglory.com" rel="nofollow">info@promisesofglory.com</a></div>
-                <div class="address__social-layer social-icons"><a class="facebook-link social-link" href="https://facebook.com" target="_blank" rel="noopener noreffer nofollow"><span class="address__ico"><i class="ico s-facebook"></i></span></a><a class="instagram-link social-link" href="https://instagram.com" target="_blank" rel="noopener noreffer nofollow"><span class="address__ico"><i class="ico s-instagram"></i></span></a></div>
-              </div>
+          <div class="address__info-layer">
+            <div class="address__bg-layer">
+              <picture>
+                <source srcset="img/contacts.webp" type="image/webp">
+                <source srcset="img/contacts.png" type="image/png"><img class="address__bg" src="img/contacts.png" alt="Background">
+              </picture>
             </div>
+            <div class="address__street-layer">
+              <p class="address__street">Mevaseret Zion</p>
+              <p class="address__street">ISRAEL 90805</p>
+            </div>
+            <div class="address__mail-layer"><a class="address__mail" href="mailto:info@promisesofglory.com" rel="nofollow">info@promisesofglory.com</a></div>
+            <div class="address__social-layer social-icons"><a class="facebook-link social-link" href="https://facebook.com" target="_blank" rel="noopener noreffer nofollow"><span class="address__ico"><i class="ico s-facebook"></i></span></a><a class="instagram-link social-link" href="https://instagram.com" target="_blank" rel="noopener noreffer nofollow"><span class="address__ico"><i class="ico s-instagram"></i></span></a></div>
           </div>
           <div class="address__map-layer">
             <div class="address__map">
@@ -403,7 +579,8 @@
       </div>
     </footer>
     <div class="popups"></div>
-    <script src="js/libs.min.js?v=1609704729010" defer></script>
-    <script src="js/script.min.js?v=1609704729010" async></script>
+    <script src="js/libs.min.js?v=1609795647955" defer></script>
+    <link rel="preload" href="js/script.min.js?v=1609795647955" as="script">
+    <script src="js/script.min.js?v=1609795647955" async></script>
   </body>
 </html>

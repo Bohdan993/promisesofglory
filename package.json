@@ -7,7 +7,8 @@
     "@babel/plugin-transform-runtime": "^7.10.5",
     "@babel/runtime": "^7.10.5",
     "@splidejs/splide": "^2.4.21",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "vanilla-lazyload": "^17.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -45,6 +46,7 @@
     "gulp-svgmin": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
+    "gulp-webp": "^4.0.1",
     "gulp.spritesmith": "^6.11.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-webp": "^6.0.0",

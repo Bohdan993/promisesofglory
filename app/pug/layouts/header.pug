@@ -10,7 +10,10 @@ header.header
 			.splide__track.header__slider-track
 				.splide__list.header__slider-list
 					.splide__slide.header__slider-slide
-						img(data-splide-lazy="img/header-bg.png" alt="Slide")
+						picture
+							source(data-splide-lazy-srcset="img/header-bg.webp" type="image/webp")
+							source(data-splide-lazy-srcset="img/header-bg.png" type="image/png")
+							img.header__slider-background(data-splide-lazy="img/header-bg.png" alt="Slide")
 						.center
 							.f-container
 								.slide-title-layer
@@ -28,7 +31,10 @@ header.header
 										span.btn-text
 											|SHOP NOW
 					.splide__slide.header__slider-slide
-						img(data-splide-lazy="img/header-bg.png" alt="Slide")
+						picture
+							source(data-splide-lazy-srcset="img/header-bg.webp" type="image/webp")
+							source(data-splide-lazy-srcset="img/header-bg.png" type="image/png")
+							img.header__slider-background(data-splide-lazy="img/header-bg.png" alt="Slide")
 						.center
 							.f-container
 								.slide-title-layer
@@ -46,7 +52,10 @@ header.header
 										span.btn-text
 											|SHOP NOW
 					.splide__slide.header__slider-slide
-						img(data-splide-lazy="img/header-bg.png" alt="Slide")
+						picture
+							source(data-splide-lazy-srcset="img/header-bg.webp" type="image/webp")
+							source(data-splide-lazy-srcset="img/header-bg.png" type="image/png")
+							img.header__slider-background(data-splide-lazy="img/header-bg.png" alt="Slide")
 						.center
 							.f-container
 								.slide-title-layer

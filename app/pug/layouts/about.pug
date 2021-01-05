@@ -1,8 +1,11 @@
 .about
 	.about__layout.section__layout
 		.floating-image-layer.floating-image-layer-2
-			img.floating-image(src="img/olive2.png" alt="Olive tree branch")
-		.center
+			picture
+				source(srcset="img/olive2.webp" type="image/webp")
+				source(srcset="img/olive2.png" type="image/png")
+				img.floating-image(src="img/olive2.png" alt="Olive tree branch")
+		.center.center__about
 			.f-container.f-container__about
 				article.about__article-left.about__article
 					.about__text-group
@@ -24,25 +27,49 @@
 						.splide__track
 							.about__image-group.splide__list
 								.about__image-layer.splide__slide
-									img.about__image(data-splide-lazy="img/about-bg1.png" alt="Picture")
+									picture
+										source(data-splide-lazy-srcset="img/about-bg1.webp" type="image/webp")
+										source(data-splide-lazy-srcset="img/about-bg1.png" type="image/png")
+										img.about__image(data-splide-lazy="img/about-bg1.png" alt="Picture")
 								.about__image-layer.splide__slide
-									img.about__image(data-splide-lazy="img/about-bg2.png" alt="Picture")
+									picture
+										source(data-splide-lazy-srcset="img/about-bg2.webp" type="image/webp")
+										source(data-splide-lazy-srcset="img/about-bg2.png" type="image/png")
+										img.about__image(data-splide-lazy="img/about-bg2.png" alt="Picture")
 								.about__image-layer.splide__slide
-									img.about__image(data-splide-lazy="img/about-bg1.png" alt="Picture")
+									picture
+										source(data-splide-lazy-srcset="img/about-bg1.webp" type="image/webp")
+										source(data-splide-lazy-srcset="img/about-bg1.png" type="image/png")
+										img.about__image(data-splide-lazy="img/about-bg1.png" alt="Picture")
 								.about__image-layer.splide__slide
-									img.about__image(data-splide-lazy="img/about-bg2.png" alt="Picture")
+									picture
+										source(data-splide-lazy-srcset="img/about-bg2.webp" type="image/webp")
+										source(data-splide-lazy-srcset="img/about-bg2.png" type="image/png")
+										img.about__image(data-splide-lazy="img/about-bg2.png" alt="Picture")
 				article.about__article-right.about__article
 					.splide.about__image-slider
 						.splide__track
 							.about__image-group.splide__list
 								.about__image-layer.splide__slide
-									img.about__image(data-splide-lazy="img/about-bg2.png" alt="Picture")
+									picture
+										source(data-splide-lazy-srcset="img/about-bg2.webp" type="image/webp")
+										source(data-splide-lazy-srcset="img/about-bg2.png" type="image/png")
+										img.about__image(data-splide-lazy="img/about-bg2.png" alt="Picture")
 								.about__image-layer.splide__slide
-									img.about__image(data-splide-lazy="img/about-bg1.png" alt="Picture")
+									picture
+										source(data-splide-lazy-srcset="img/about-bg1.webp" type="image/webp")
+										source(data-splide-lazy-srcset="img/about-bg1.png" type="image/png")
+										img.about__image(data-splide-lazy="img/about-bg1.png" alt="Picture")
 								.about__image-layer.splide__slide
-									img.about__image(data-splide-lazy="img/about-bg2.png" alt="Picture")
+									picture
+										source(data-splide-lazy-srcset="img/about-bg2.webp" type="image/webp")
+										source(data-splide-lazy-srcset="img/about-bg2.png" type="image/png")
+										img.about__image(data-splide-lazy="img/about-bg2.png" alt="Picture")
 								.about__image-layer.splide__slide
-									img.about__image(data-splide-lazy="img/about-bg1.png" alt="Picture")
+									picture
+										source(data-splide-lazy-srcset="img/about-bg1.webp" type="image/webp")
+										source(data-splide-lazy-srcset="img/about-bg1.png" type="image/png")
+										img.about__image(data-splide-lazy="img/about-bg1.png" alt="Picture")
 					.about__text-group
 						.h2-title__layer
 							h2.h2-title

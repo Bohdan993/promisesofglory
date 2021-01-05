@@ -13,6 +13,12 @@
 	height: 100%;
 }
 
+.header__slider {
+	.splide__spinner {
+		display: none;
+	}
+}
+
 .header__slider-list {
 	width: 100%;
 	height: 100%;
@@ -20,6 +26,14 @@
 
 
 .header__slider-slide {
+	position: relative;
+	.header__slider-background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+	}
 	.center, .f-container {
 		height: 100%;
 	}

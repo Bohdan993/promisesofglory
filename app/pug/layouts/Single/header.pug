@@ -1,5 +1,8 @@
 header.header
 	include ../menu
-	.header__layout.header-single__layout
-		.header-single__image-layer
-			img.header-single__image(src="img/single-header-bg.png" alt="Background")
+	.header__layout.header__layout_bg
+		.header__image-layer_bg
+			picture
+				source(srcset="img/single-header-bg.webp" type="image/webp")
+				source(srcset="img/single-header-bg.png" type="image/png")
+				img(src="img/single-header-bg.png" alt="Background").header__image_bg

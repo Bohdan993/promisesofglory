@@ -1,6 +1,6 @@
 .feedback__layout{
 	position: relative;
-	.fPa(65%, 100%, 65px, 100px, 992px,  1366px);
+	.fPa(65%, 100%, 65px, 100px, 576px,  1366px);
 }
 
 .feedback__slider {
@@ -11,6 +11,10 @@
 	.splide__track {
 		height: 100%;
 	}
+
+	.splide__spinner {
+		display: none;
+	}
 }
 
 .feedback__group {
@@ -20,6 +24,7 @@
 .feedback__inner {
 	display: flex;
 	justify-content: center;
+	// padding: (55/1200 * 100%) 0;
 	padding: 55px 0;
 	height: auto;
 	max-width: 1032/1200 * 100%;
@@ -101,7 +106,7 @@
 .s-quotes {
 	position: absolute;
 	top: 44px;
-	left: 32px;
+	left: 32/814 * 100%;
 }
 
 .feedback__image-layer {
@@ -116,6 +121,7 @@
   margin-inline-end: 0;
   align-content: center;
   justify-content: center;
+  max-width: 190px;
 }
 
 .feedback__image {

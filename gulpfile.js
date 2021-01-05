@@ -14,6 +14,7 @@ const pugToHtml = require('gulp-pug');
 const browserSync = require('browser-sync').create();
 const sourcemap = require('gulp-sourcemaps');
 const img = require('gulp-imagemin');
+// const webp = require('gulp-webp');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const rename = require('gulp-rename');
 const plumber = require('gulp-plumber');
@@ -25,7 +26,7 @@ const replace = require('gulp-replace');
 const spritesmith = require('gulp.spritesmith');
 const webpack = require('webpack-stream');
 const gulpif = require('gulp-if');
-const webp = require("imagemin-webp");
+// const webp = require("imagemin-webp");
 const extReplace = require("gulp-ext-replace");
 // const smartgrid = require('smart-grid');
 const log = require('fancy-log');
@@ -36,7 +37,7 @@ const critical = require('critical').stream;
 
 
 
-let isDev = true;
+let isDev = false;
 let isProd = !isDev;
 
 let webConfig = {
@@ -309,9 +310,19 @@ function images() {
     ))
 
     .pipe(dest('./dist/img'))
-        .pipe(browserSync.stream());
+    .pipe(browserSync.stream());
 
 }
+
+
+// function imgWebp(){
+//     return src("./app/img/**/*.{jpg,jpeg,png}")
+//     .pipe(webp({
+//       quality: 100
+//     }))
+//     .pipe(dest('./dist/img'))
+//     .pipe(browserSync.stream());
+// }
 
 
 // function convertToWebp () {
@@ -454,6 +465,7 @@ exports.images = images;
 exports.fonts = fonts;
 // exports.html = html;
 exports.pug = pug;
+// exports.imgWebp = imgWebp;
 // exports.convertToWebp = convertToWebp;
 exports.sprites = sprites;
 exports.spritesPNG = spritesPNG;

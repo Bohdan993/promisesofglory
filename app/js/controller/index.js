@@ -2,7 +2,8 @@ import {
 	InitSlider,
 	FixedMenu,
 	PlayVideo,
-	BurgerMenu
+	BurgerMenu,
+	LazyLoad
 } from '../model'
 import {
 	header,
@@ -26,6 +27,7 @@ const app = {
 		this.fm()
 		this.pv()
 		this.bm()
+		this.ll()
 	},
 	is(){
 		InitSlider({
@@ -39,11 +41,14 @@ const app = {
 	fm(){
 		FixedMenu(menu, header)
 	},
-	pv() {
+	pv(){
 		PlayVideo(playBtn, videoParent, videoLayer)
 	},
 	bm(){
 		BurgerMenu(menuBtn, menuCloseBtn, menuList)
+	},
+	ll(){
+		LazyLoad()
 	}
 
 }

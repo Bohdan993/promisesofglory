@@ -2,19 +2,18 @@ import {Splide} from '../../../libs/libs'
 import {default as Extention} from './SliderExtention'
 
 
-console.log(Extention)
 const InitSlider = (sliders) => {
 
 	if(sliders.headerSlider) {
 		new Splide( sliders.headerSlider, {
 			type   : 'loop',
-			autoplay: true, 
-			interval: 4000,
+			// autoplay: true, 
+			// interval: 4000,
 			// height  : '100vh',
 			lazyLoad: 'nearby',
 			pagination: false,
 			pauseOnHover: true,
-			cover: true,
+			// cover: true,
 		}).mount();
 	}
 
@@ -37,13 +36,24 @@ const InitSlider = (sliders) => {
 	}
 
 	if(sliders.feedbackSlider) {
-		new Splide( sliders.feedbackSlider, {
+		let feedbackSplide = new Splide( sliders.feedbackSlider, {
 			type   : 'loop',
 			lazyLoad: 'nearby',
 			pagination: false,
 			pauseOnHover: true,
-			gap: '2em'
+			gap: '2em',
+			breakpoints : {
+				'576': {
+					gap: '1em',
+				}
+			}
 		}).mount({Extention});
+
+		window.addEventListener('resize', function(){
+			feedbackSplide.emit( 'resize')
+		})
+
+		
 	}
 
 if(sliders.presentationImageSlider) {
@@ -55,7 +65,7 @@ if(sliders.presentationImageSlider) {
 			// focus       : 'center',
 			trimSpace: true,
 			pagination  : false,
-			cover       : true,
+			// cover       : true,
 			breakpoints : {
 				// '768': {
 				// 	fixedWidth  : 100,

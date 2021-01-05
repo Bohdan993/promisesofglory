@@ -1,7 +1,10 @@
 .video
 	.video__layout
 		.video__background(data-youtube="1UUYjd2rjsE")
-			img.video__background-image(src="img/video-bg.png" alt="Background")
+			picture
+				source(srcset="img/video-bg.webp" type="image/webp")
+				source(srcset="img/video-bg.png" type="image/png")
+				img.video__background-image(src="img/video-bg.png" alt="Background")
 		.center.center__video
 			.f-container
 				.video__layer
@@ -11,5 +14,7 @@
 								|Promises Of Glory 
 							|- Process video
 					.video__play-button-layer
-						img.video__play-button(src="img/play-btn.png" alt="Play Button")
-							//- +svg2('play-btn')
+						picture
+							source(srcset="img/play-btn.webp" type="image/webp")
+							source(srcset="img/play-btn.png" type="image/png")
+							img.video__play-button(src="img/play-btn.png" alt="Play Button")
