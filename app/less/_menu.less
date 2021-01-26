@@ -104,40 +104,7 @@
 			background: rgba(0,0,0,0.6);
 		}
 
-		.menu__close {
-			position: absolute;
-			width: 30px;
-			height: 30px;
-			top: 18px;
-			right: 18px;
-			cursor: pointer;
 
-			&:hover {
-				&:after, &:before {
-					background: @secondary;
-				}
-			}
-
-			&:before {
-				content: '';
-				position: absolute;
-				background: @black;
-				width: 20px;
-				height: 3px;
-				transition: background .25s linear;
-				transform: rotate(45deg);
-			}
-
-			&:after {
-				content: '';
-				position: absolute;
-				background: @black;
-				width: 20px;
-				height: 3px;
-				transition: background .25s linear;
-				transform: rotate(135deg);
-			}
-		}
 	}
 }
 

@@ -1,0 +1,43 @@
+extends pug/base
+
+
+
+append vars
+
+
+prepend vars
+
+
+
+
+
+block links
+	//- link(href="https://fonts.gstatic.com" rel="preconnect")
+	//- link(href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet")
+
+
+
+block head-end
+
+
+
+
+
+
+
+block content
+	include pug/layouts/Blog/header
+	main.main
+		include pug/layouts/BlogSingle/presentation
+		include pug/layouts/Blog/articles
+		include pug/layouts/Blog/about
+		include pug/layouts/video
+		include pug/layouts/posts
+		include pug/layouts/feedback
+		include pug/layouts/form
+		include pug/layouts/address
+	include pug/layouts/footer
+	include pug/layouts/cart
+	include pug/layouts/_popup
+
+

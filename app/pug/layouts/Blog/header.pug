@@ -1,0 +1,8 @@
+header.header
+	include ../menu
+	.header__layout.header__layout_bg
+		.header__image-layer_bg
+			picture
+				source(data-srcset="img/catalog-header-bg.webp" type="image/webp")
+				source(data-srcset="img/catalog-header-bg.png" type="image/png")
+				img.lazy(data-src="img/catalog-header-bg.png" alt="Background").header__image_bg

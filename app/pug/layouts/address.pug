@@ -3,9 +3,9 @@
 		.address__info-layer
 			.address__bg-layer
 				picture
-					source(srcset="img/contacts.webp" type="image/webp")
-					source(srcset="img/contacts.png" type="image/png")
-					img.address__bg(src="img/contacts.png" alt="Background")
+					source(data-srcset="img/contacts.webp" type="image/webp")
+					source(data-srcset="img/contacts.png" type="image/png")
+					img.address__bg.lazy(data-src="img/contacts.png" alt="Background")
 			.address__street-layer
 				p.address__street
 					|Mevaseret Zion
@@ -23,4 +23,4 @@
 						i.ico.s-instagram
 		.address__map-layer
 			.address__map
-				iframe#gmap_canvas(width='100%' height='100%' src='https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0')
+				iframe#gmap_canvas.lazy(width='100%' height='100%' data-src='https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0')

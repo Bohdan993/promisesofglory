@@ -20,6 +20,14 @@
 		padding-left: 7px;
 		padding-right: 7px;
 	}
+
+	.presentation-article__container {
+		align-items: center;
+	}
+
+	.s-quotes {
+		top: 25px;
+	}
 }
 
 
@@ -32,7 +40,7 @@
 		padding: 0 15px;
 	}
 
-	.cards__desktop {
+	.cards__desktop, .articles__desktop {
 		display: none;
 	}
 
@@ -45,7 +53,7 @@
 	}
 
 
-	.cards__mobile {
+	.cards__mobile, .articles__mobile {
 		display: block;
 
 		.card {
@@ -115,10 +123,16 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+
+		
 	}
 
 	.menu__btn {
 		display: flex;
+	}
+
+	.menu__close {
+		display: block;
 	}
 
 	.menu__list-item {
@@ -238,6 +252,45 @@
 		padding: 10px 0;
 	}
 
+	.presentation-article__text:not(:last-child) {
+		padding-bottom: 20px;
+	}
+
+	.presentation-article__container {
+		padding-bottom: 20px;
+	}
+
+	.presentation-article__container {
+		flex-wrap: wrap;
+	}
+
+	.presentation-article__image-wrapper, .presentation-article__content-wrapper {
+		width: 100%;
+		flex-basis: 100%;
+	}
+
+	.presentation-article__image-wrapper:before {
+		padding-top: 75%;
+	}
+
+	.presentation-article__title-wrapper {
+		text-align:center
+	}
+
+	.presentation-article__image-wrapper {
+		margin-bottom: 35px;
+	}
+
+	.presentation-article__content-wrapper {
+		padding-left: 0;
+	}
+
+	.s-quotes {
+		position: absolute;
+		top: 15px;
+		left: 16/814 * 100%;
+	}
+
 }
 
 
@@ -312,8 +365,8 @@
 	}
 
 
-	.cards__mobile {
-		.cards__row {
+	.cards__mobile, .articles__mobile {
+		.cards__row, .articles__row {
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: flex-start;
@@ -464,5 +517,37 @@
 	.menu__social-icons {
 		display: flex;
 	}
+
+	.cart__wrapper.fixed {
+		// max-height: 596px;
+		// min-height: 530px;
+
+		.cart__step-line {
+			width: 25px;
+		}
+
+		.cart__card-text-wrapper {
+			margin-bottom: 20px;
+		}
+
+		.cart__wrapper .cart__card-content-wrapper {
+			padding-left: 20px;
+		}
+	}
+
+	.about-article__layout {
+		.about__image-slider, .about__text-group {
+			width: 100%;
+			flex-basis: 100%;
+		}
+	}
+
+	.s-quotes {
+		position: absolute;
+		top: 8px;
+		left: 8/814 * 100%;
+	}
+
+
 
 }

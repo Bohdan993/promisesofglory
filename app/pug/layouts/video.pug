@@ -2,9 +2,9 @@
 	.video__layout
 		.video__background(data-youtube="1UUYjd2rjsE")
 			picture
-				source(srcset="img/video-bg.webp" type="image/webp")
-				source(srcset="img/video-bg.png" type="image/png")
-				img.video__background-image(src="img/video-bg.png" alt="Background")
+				source(data-srcset="img/video-bg.webp" type="image/webp")
+				source(data-srcset="img/video-bg.png" type="image/png")
+				img.video__background-image.lazy(data-src="img/video-bg.png" alt="Background")
 		.center.center__video
 			.f-container
 				.video__layer
@@ -15,6 +15,6 @@
 							|- Process video
 					.video__play-button-layer
 						picture
-							source(srcset="img/play-btn.webp" type="image/webp")
-							source(srcset="img/play-btn.png" type="image/png")
-							img.video__play-button(src="img/play-btn.png" alt="Play Button")
+							source(data-srcset="img/play-btn.webp" type="image/webp")
+							source(data-srcset="img/play-btn.png" type="image/png")
+							img.video__play-button.lazy(data-src="img/play-btn.png" alt="Play Button")

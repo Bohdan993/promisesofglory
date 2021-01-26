@@ -3,7 +3,9 @@ import {
 	FixedMenu,
 	PlayVideo,
 	BurgerMenu,
-	LazyLoad
+	LazyLoad,
+	Cart,
+	CartSteps
 } from '../model'
 import {
 	header,
@@ -18,7 +20,15 @@ import {
 	videoLayer,
 	videoParent,
 	presentationImageSlider,
-	presentationThumbnailsImageSlider
+	presentationThumbnailsImageSlider,
+	cartBtn,
+	cartCloseBtn,
+	cart,
+	cartStepsButton,
+	cartStepsList,
+	cartContentLayer,
+	cartContentTitle,
+	body
 } from '../view'
 
 const app = {
@@ -28,6 +38,8 @@ const app = {
 		this.pv()
 		this.bm()
 		this.ll()
+		this.c()
+		this.cs()
 	},
 	is(){
 		InitSlider({
@@ -49,6 +61,12 @@ const app = {
 	},
 	ll(){
 		LazyLoad()
+	},
+	c(){
+		Cart(cartBtn, cartCloseBtn, cart)
+	},
+	cs(){
+		CartSteps(cartStepsButton, cartStepsList, cartContentLayer, cartContentTitle)
 	}
 
 }

@@ -13,6 +13,14 @@ const videoLayer = document.querySelector('.video__background')
 const videoParent = document.querySelector('.video__layout')
 const presentationImageSlider = document.querySelector('.presentation__image-slider')
 const presentationThumbnailsImageSlider = document.querySelector('.presentation__thumbnails-image-slider')
+const cartBtn = document.querySelector('.shopping-bag-link')
+const cartCloseBtn = document.querySelector('.cart__close')
+const cart = document.querySelector('.cart__wrapper ')
+const cartStepsButton = document.querySelector('.cart__button')
+const cartStepsList = document.querySelectorAll('.cart__list-item')
+const cartContentLayer = document.querySelectorAll('.cart__content-layer')
+const cartContentTitle = document.querySelector('.cart__content-title')
+const body = document.querySelector('body')
 
 export {
 	menu,
@@ -27,5 +35,13 @@ export {
 	videoLayer,
 	videoParent,
 	presentationImageSlider,
-	presentationThumbnailsImageSlider
+	presentationThumbnailsImageSlider,
+	cartBtn,
+	cartCloseBtn,
+	cart,
+	cartStepsButton,
+	cartStepsList,
+	cartContentLayer,
+	cartContentTitle,
+	body
 }

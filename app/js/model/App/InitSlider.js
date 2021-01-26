@@ -62,6 +62,8 @@ if(sliders.presentationImageSlider) {
 			isNavigation: true,
 			arrows: false,
 			autoWidth: true,
+			lazyLoad: 'nearby',
+			preloadPages: 3,
 			// focus       : 'center',
 			trimSpace: true,
 			pagination  : false,
@@ -77,6 +79,7 @@ if(sliders.presentationImageSlider) {
 		// Create the main slider.
 		let primarySlider = new Splide( sliders.presentationImageSlider, {
 			type       : 'fade',
+			lazyLoad: 'nearby',
 			pagination : false,
 			arrows     : false,
 			pauseOnHover: false,

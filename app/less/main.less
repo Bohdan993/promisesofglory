@@ -14,6 +14,7 @@ body {
   color: @font-color;
   height: 100%;
   width: 100%;
+  // overflow-x: hidden;
  
 }
 
@@ -34,6 +35,10 @@ body {
   letter-spacing: 0.01rem;
   line-height: 1.15;
   background-color: @white;
+
+  &.fixed {
+    overflow: hidden;
+  }
 
 }
 
@@ -240,6 +245,11 @@ main {
   left: 0;
 }
 
+.floating-image-layer-4 {
+  top: 0;
+  left: 0;
+}
+
 
 .social-link {
   cursor: pointer;
@@ -285,6 +295,47 @@ main {
 }
 
 
+.close-popup {
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 12px;
+  right: 18px + 9px;
+  cursor: pointer;
+
+  &:hover {
+    &:after, &:before {
+      background: @secondary;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: @black;
+    width: 20px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transition: background .25s linear;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    background: @black;
+    width: 20px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transition: background .25s linear;
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+}
+
+
 
 
 ////////Animations/////
@@ -313,6 +364,7 @@ main {
 @import url("app/less/_feedback.less");
 @import url("app/less/_form.less");
 @import url("app/less/_address.less");
+@import url("app/less/_cart.less");
 @import url("app/less/_footer.less");
 
 @import url("app/less/Single/_header.less");
@@ -320,6 +372,13 @@ main {
 
 
 @import url("app/less/ContactUs/_form.less");
+
+
+@import url("app/less/Blog/_articles.less");
+@import url("app/less/Blog/_about.less");
+
+
+@import url("app/less/BlogSingle/_presentation.less");
 
 
 @import url("app/less/_popup.less");
